@@ -6,10 +6,10 @@
 -->
 <html>
 	<head>
-		<title>Eventually by HTML5 UP</title>
+		<title>Log in - Mars Space Port Administration</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -21,11 +21,12 @@
 
 		<!-- Signup Form -->
 			<form id="signup-form" method="post" action="#">
-				<input type="user" name="user" id="user" placeholder="Username" />
-				<input type="pass" name="pass" id="pass" placeholder="Password" />
-				<input type="submit" value="Sign In" />
+				<input type="text" name="user" id="user" placeholder="Username" />
+				<input type="password" name="pass" id="pass" placeholder="Password" />
+				<input type="submit" value="Log In" />
 			</form>
 
+		<p><%= err_msg %></p>
 		<!-- Footer
 			<footer id="footer">
 				<ul class="icons">
@@ -40,7 +41,7 @@
 			</footer> -->
 
 		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>

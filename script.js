@@ -7,15 +7,16 @@ app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function (req, res) {
-  res.render('index');
+  var err_msg = "";
+  res.render('index', {err_msg: err_msg});
 })
 
 app.post('/', function (req, res) {
   // res.render('index');
   var username = req.body.user;
   var password = req.body.pass;
-  console.log(username);
-  console.log(password);
+  // console.log(username);
+  // console.log(password);
   let con = mysql.createConnection({
   	host: '138.68.57.55',
   	port: 3306,
@@ -24,8 +25,12 @@ app.post('/', function (req, res) {
   	database: "MarsSpacePortAdministration"
   });
   con.connect(function(err) {
-    if (err) res.render('index');
-  	res.render('officer');
+    if (err) {
+	var err_msg = "Permission denied. Please try again.";
+	res.render('index', {err_msg: err_msg});
+    }
+
+    res.render('officer');
   	// let sql = "select * from Astronaut";
   	// con.query(sql, function (err, result) {
   	// if (err) throw err;
