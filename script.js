@@ -24,13 +24,13 @@ app.post('/', function (req, res) {
   	database: "MarsSpacePortAdministration"
   });
   con.connect(function(err) {
-  	if (err) throw err;
-  	// res.send("Connected!");
-  	let sql = "select * from Astronaut";
-  	con.query(sql, function (err, result) {
-  	if (err) throw err;
-  	res.send(result);
-    });
+    if (err) res.render('index');
+  	res.render('officer');
+  	// let sql = "select * from Astronaut";
+  	// con.query(sql, function (err, result) {
+  	// if (err) throw err;
+  	// res.send(result);
+    // });
   });
 })
 
