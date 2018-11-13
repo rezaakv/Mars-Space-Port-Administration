@@ -78,7 +78,8 @@ CREATE TABLE IF NOT EXISTS ShipmentLaunchpadSlot(
 -- FOREIGN KEY (Port#, Location, StartDate, EndDate, StartTime, EndTime) REFERENCES LaunchpadSlot
 -- ON DELETE NO ACTION
 -- ON UPDATE NO ACTION,
-);
+    );
+
 
 CREATE TABLE IF NOT EXISTS CrewShipment(
     AstroID INT NOT NULL,
@@ -105,54 +106,5 @@ CREATE TABLE IF NOT EXISTS CarryPassengerShipment(
     FOREIGN KEY (InvoiceNum) REFERENCES ShipmentLaunchpadSlot (InvoiceNum)
     -- ON DELETE CASCADE
     );
-
--- CREATE TABLE OfficerReserveShipment(
--- AstroID INT,
--- Invoice# INT,
--- Date DATE,
--- PRIMARY KEY (Invoice#),
--- FOREIGN KEY (AstroID) REFERENCES Officer(AstroID)
--- ON DELETE NO ACTION
--- ON UPDATE NO ACTION,
--- FOREIGN KEY (Invoice#) REFERENCES ConfirmedShipment(Invoice#)
--- ON DELETE CASCADE
--- ON UPDATE NO ACTION
--- ) ;
-
--- CREATE TABLE Launchpad(
--- Port# INT,
--- Location VARCHAR(100)
--- PRIMARY KEY (Port#, Location)
--- ) ;
-
--- CREATE TABLE LaunchpadSlot(
--- -- SlotID INT,
--- Location VARCHAR(100),
--- Port# INT,
--- StartDate DATE NOT NULL,
--- EndDate DATE NOT NULL,
--- StartTime REAL NOT NULL,
--- EndTime REAL NOT NULL,
--- PRIMARY KEY (Location, Port#, StartDate, EndDate, StartTime, EndTime)
--- ) ;
-
--- CREATE TABLE ShipmentLaunchpadSlot(
--- Invoice# INT,
--- Port# INT,
--- Location VARCHAR(100),
--- SlotID INT,
--- Cost REAL,
--- PRIMARY KEY (Invoice#),
--- UNIQUE (Port#, Location, SlotID),
--- FOREIGN KEY (Invoice#) REFERENCES ShipmentLaunchpadSlot(Invoice#)
--- ON DELETE CASCADE
--- ON UPDATE CASCADE,
--- FOREIGN KEY (Port#, Location) REFERENCES Launchpad(Port#, Location)
--- ON DELETE NO ACTION
--- ON UPDATE NO ACTION,
--- FOREIGN KEY (SlotID) REFERENCES AvailabilitySlot(SlotID)
--- ON DELETE NO ACTION
--- ON UPDATE NO ACTION
--- ) ;
 
 commit;
