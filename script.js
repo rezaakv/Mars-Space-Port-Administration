@@ -28,9 +28,7 @@ app.post('/', function (req, res) {
     if (err) {
 	var err_msg = "Permission denied. Please try again.";
 	res.render('index', {err_msg: err_msg});
-    }
-
-    res.render('officer');
+    } else { res.render('officer');}
   	// let sql = "select * from Astronaut";
   	// con.query(sql, function (err, result) {
   	// if (err) throw err;
