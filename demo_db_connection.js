@@ -1,6 +1,6 @@
-var mysql = require('mysql');
+let mysql = require('mysql');
 
-var con = mysql.createConnection({
+let con = mysql.createConnection({
   host: '138.68.57.55',
   port: 3306,
   user: "Qianqian",
@@ -11,7 +11,7 @@ var con = mysql.createConnection({
 con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
-  var sql = "create table test(a int, b int)";
+  let sql = "create table test(a int, b int)";
   con.query(sql, function (err, result) {
   if (err) throw err;
   console.log("1 table created");
