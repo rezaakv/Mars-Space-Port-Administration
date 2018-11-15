@@ -1,0 +1,11 @@
+DROP TABLE Passenger;
+DROP TABLE CarryPassengerShipment;
+DROP TABLE CrewShipment;
+DROP TABLE Crew;
+DROP TABLE ShipmentLaunchpadSlot;
+DROP TABLE Reservation;
+DROP TABLE Rocket;
+DROP TABLE Cargo;
+DROP TABLE Officer;
+DROP TABLE Company;
+DROP TABLE Astronaut;
