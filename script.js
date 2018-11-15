@@ -11,6 +11,7 @@ app.get('/', function (req, res) {
   res.render('index', {err_msg: err_msg});
 })
 
+
 app.post('/', function (req, res) {
   // res.render('index');
   var username = req.body.user;
@@ -48,16 +49,20 @@ app.post('/', function (req, res) {
 	//console.log(table)
 	//res.render('officer', {table: table});
 
-	//app.post('/#', function (req, res){
+	app.post('/astro', function (req, res){
 	//	console.log('got request');
 		var astroID = req.body.AstroID;
 		console.log(req.body)
-		sql = "select *  from Astronaut where AstroID=" + astroID;
+		if (astroID == "") {
+			sql = "select * from Astronaut";
+		} else {
+			sql = "select *  from Astronaut where AstroID=" + astroID;
+		}
 		con.query(sql, function (err, result) {
                         if (err) throw err;
                         //console.log(table);
                         res.render('officer', {table: result});
-               // });
+                });
 	
 
 	});
