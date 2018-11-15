@@ -1061,7 +1061,7 @@ input, select, textarea {
 
 /* Signup Form */
 
-	#signup-form {
+	#query-form {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1069,40 +1069,40 @@ input, select, textarea {
 		position: relative;
 	}
 
-		#signup-form input[type="text"],
-		#signup-form input[type="password"],
-		#signup-form input[type="user"] {
+		#query-form input[type="text"],
+		#query-form input[type="password"],
+		#query-form input[type="user"] {
 			width: 18em;
 		}
 
-		#signup-form > * {
+		#query-form > * {
 			margin: 0 0 0 1em;
 		}
 
-		#signup-form > :first-child {
+		#query-form > :first-child {
 			margin: 0 0 0 0;
 		}
 
 		@media screen and (max-width: 480px) {
 
-			#signup-form {
+			#query-form {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
 			}
 
-				#signup-form input[type="type"],
-				#signup-form input[type="password"],
-				#signup-form input[type="user"] {
+				#query-form input[type="type"],
+				#query-form input[type="password"],
+				#query-form input[type="user"] {
 					width: 100%;
 				}
 
-				#signup-form > * {
+				#query-form > * {
 					margin: 1.25em 0 0 0;
 				}
 
-				#signup-form .message {
+				#query-form .message {
 					bottom: -1.5em;
 					font-size: 0.9em;
 					height: 1em;

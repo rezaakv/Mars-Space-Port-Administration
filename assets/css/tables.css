@@ -1,0 +1,25 @@
+
+
+.nav {
+	width: 25%;
+}
+
+
+.panel {
+	position: absolute;
+	width: 65%;
+	right: 4%;
+}
+
+.panel-transparent {
+        background: none;
+}
+
+.panel-transparent .panel-heading{
+        background: rgba(122, 130, 136, 0.2)!important;
+}
+
+.panel-transparent table{
+        background: rgba(46, 51, 56, 0.2)!important;
+	overflow: auto;
+}
