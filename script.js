@@ -52,12 +52,17 @@ app.post('/', function (req, res) {
 	app.post('/astro', function (req, res){
 	//	console.log('got request');
 		var astroID = req.body.AstroID;
+		var name = req.body.Name;
 		console.log(req.body)
-		if (astroID == "") {
+		if (astroID == "" && name == "") {
 			sql = "select * from Astronaut";
 		} else {
-			sql = "select *  from Astronaut where AstroID=" + astroID;
+			sql = "select *  from Astronaut where ";
+			if (astroID != "") sql += "AstroID = " + astroID + " AND ";
+			if (name != "") sql += "Name = '" + name + "'" + " AND ";
+			sql = sql.slice(0, -5);
 		}
+		console.log(sql);
 		con.query(sql, function (err, result) {
                         if (err) throw err;
                         //console.log(table);

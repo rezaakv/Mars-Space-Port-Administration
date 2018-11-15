@@ -9,7 +9,7 @@
 		<title>Eventually by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 
@@ -22,13 +22,15 @@
 		<!-- Signup Form -->
 			<form id="astronaut-query" method="post" action="astro">
 				<input type="text" name="AstroID" id="AstroID" placeholder="AstroID" />
+				<input type="text" name="Name" id="Name" placeholder="Name" />
 				<input type="submit" value="Find" />
 			</form>
 
 			<table>
+			<tr>AstroID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</tr>
 			<% for(var i=0; i < table.length; i++) { %>
    			<tr>
-     			<td><%= table[i].AstroID %></td>
+     			<td><%= table[i].AstroID %></td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
      			<td><%= table[i].Name %></td>
    			</tr>
 			<% } %>
