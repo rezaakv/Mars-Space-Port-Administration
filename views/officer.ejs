@@ -21,9 +21,18 @@
 
 		<!-- Signup Form -->
 			<form id="astronaut-query" method="post" action="#">
-				<input type="id" name="id" id="id" placeholder="AstroID" />
+				<input type="text" name="AstroID" id="AstroID" placeholder="AstroID" />
 				<input type="submit" value="Find" />
 			</form>
+
+			<table>
+			<% for(var i=0; i < table.length; i++) { %>
+   			<tr>
+     			<td><%= table[i].AstroID %></td>
+     			<td><%= table[i].Name %></td>
+   			</tr>
+			<% } %>
+			</table>
 
 		<!-- Footer
 			<footer id="footer">

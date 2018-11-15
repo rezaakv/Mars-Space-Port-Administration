@@ -24,20 +24,48 @@ app.post('/', function (req, res) {
   	password: password,
   	database: "MarsSpacePortAdministration"
   });
+
   con.connect(function(err) {
     if (err) {
+	console.log(err);
 	var err_msg = "Permission denied. Please try again.";
 	res.render('index', {err_msg: err_msg});
-    } else { res.render('officer');}
-  	// let sql = "select * from Astronaut";
-  	// con.query(sql, function (err, result) {
-  	// if (err) throw err;
-  	// res.send(result);
-    // });
+    } else {
+	var table = [];
+	//res.render('officer', {table: table})
+	console.log('officer rendered');
+	//console.log(con);
+  	//app.get('/#', function (req, res){
+	//	console.log('listening to officer')
+		//console.log(con);
+		let sql = "select * from Astronaut";
+        	con.query(sql, function (err, result) {
+                	if (err) throw err;
+			//console.log(table);
+			res.render('officer', {table: result});
+		});
+	//});
+	//console.log(table)
+	//res.render('officer', {table: table});
+
+	//app.post('/#', function (req, res){
+	//	console.log('got request');
+		var astroID = req.body.AstroID;
+		console.log(req.body)
+		sql = "select *  from Astronaut where AstroID=" + astroID;
+		con.query(sql, function (err, result) {
+                        if (err) throw err;
+                        //console.log(table);
+                        res.render('officer', {table: result});
+               // });
+	
+
+	});
+    }
   });
 })
 
 app.listen(8080, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('Example app listening on port 8080!')
 })
 
