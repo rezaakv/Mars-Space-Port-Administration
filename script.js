@@ -5,6 +5,8 @@ const app = express();
 
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use("/assets",express.static(__dirname + "/assets"));
+app.use("/images",express.static(__dirname + "/images"));
 
 app.get('/', function (req, res) {
   var err_msg = "";
