@@ -23,16 +23,37 @@
 
 		<!-- Side nav bar -->
 			<ul class="nav nav-pills nav-stacked">
-				
+
 				<!-- Astronaut: Find, Insert, Update, Delete -->
-				<li role="presentation"><a href="#"><form method="post" action="astro"><button id="hidden-form">Astronaut</button></form></a></li>
-				  
+				<li role="presentation">
+					<a href="#">
+						<form method="post" action="astro">
+							<button id="hidden-form">Astronaut</button>
+							<input type="hidden" name="" id="">
+						</form>
+					</a>
+				</li>
+
 				<!-- Company: Find (Crew names, AstroIDs), Find(aggregate cargo value), Find (Rocket by company), Find (Rocket by weight) -->
-				<li role="presentation"><a href="#"><form method="post" action="company"><button id="hidden-form">Company</button></form></a></li>
-				  
+				<li role="presentation">
+					<a href="#">
+						<form method="post" action="company">
+							<button id="hidden-form">Company</button>
+							<input type="hidden" name="" id="">
+						</form>
+					</a>
+				</li>
+
 				<!-- Shipment: Find (shipment), Find (departed Shipments), Insert (Reservation), Find (require assistance, invoice) -->
-				<li role="presentation"><a href="#"><form method="post" action="shipment"><button id="hidden-form">Shipment</button></form></a></li>
-			
+				<li role="presentation">
+					<a href="#">
+						<form method="post" action="shipment">
+							<button id="hidden-form">Shipment</button>
+							<input type="hidden" invoice="">
+						</form>
+					</a>
+				</li>
+				
 			</ul>
 
 		<!-- Query Form and result-->
@@ -41,16 +62,35 @@
 			<form id="query-form" method="post" action="astro">
 				<input type="text" pattern="[0-9]{0,100}" name="AstroID" id="AstroID" placeholder="AstroID" />
 				<input type="text" name="Name" id="Name" placeholder="Name" />
-				<input type="submit" value="Find" />
+
+				<form id="tableForm" action="/getJson" method="get">
+  					  <select class="selectpicker" data-style="btn-info" name="selectpicker">
+     					   <optgroup label="Select Action">
+         					   <option name="" value="0">Select Action</option>
+        					   <option name="Find" value="Find">Find</option>
+         					   <option name="Update" value="Update">Update</option>
+     					       <option name="Insert" value="Insert">Insert</option>
+     					   </optgroup>
+    				  </select>
+   					 <input type="submit" />
+				</form>
+			</form>
 			</form>
 			</div>
 			
 			<table class="table">
-			<tr><td>AstroID</td><td>Name</td></tr>
+				<tr>
+					<% let tableHeadings = Object.keys(table[0]);
+					for(let head of tableHeadings) { %>
+						<td><%= head %></td>
+					<% } %>
+				</tr>
+
 			<% for(var i=0; i < table.length; i++) { %>
    			<tr>
-     			<td><%= table[i].AstroID %></td>
-     			<td><%= table[i].Name %></td>
+			<% for (let cell of tableHeadings) { %>
+				<td><%= table[i][cell] %></td>
+			<% } %>
 			<td><a href="#"><form method="post" action="deleteAstro">
 			<input type="hidden" name="AstroID" id="AstroID" value=<%= table[i].AstroID %>>
 			<button id="hidden-form">delete</button></form></a></td>
@@ -73,7 +113,7 @@
 			</footer> -->
 
 		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+			<script src="../script.js"></script>
 
 	</body>
 </html>

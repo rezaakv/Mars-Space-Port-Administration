@@ -71,6 +71,25 @@ app.post('/', function (req, res) {
 			});
 		});
 
+		app.post('/rocketByCapacity', function(req, res){
+			var capacity = req.body.capacity;
+			var name = req.body.Name;
+			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Rocket";
+			} else {
+				sql = "select * from Rocket where ";
+				if (capacity != "") sql += "Capacity > "+ capacity;
+				sql = sql.slice(0, -5);
+			}
+			//console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+				//console.log(table);
+                res.render('officer', {table: result}); // officer need to be changed to company view
+			});
+
+		});
+
 		app.post('/deleteAstro', function (req, res){
 			console.log("deleteClicked")
 			var astroID = req.body.AstroID;
@@ -85,6 +104,47 @@ app.post('/', function (req, res) {
 					if (err) throw err;
 					res.render('officer', {table: result});
 				})
+			});
+		});
+
+		app.post('/company', function (req, res){
+			//	console.log('got request');
+			var companyID = req.body.companyID;
+			var name = req.body.Name;
+			if ((companyID == undefined && name == undefined) || (companyID == "" && name == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Company";
+			} else {
+				sql = "select *  from Company where ";
+				if (companyID != "") sql += "CompanyID = " + companyID + " AND ";
+				if (name != "") sql += "Name = '" + name + "'" + " AND ";
+				sql = sql.slice(0, -5);
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+                //console.log(table);
+                res.render('officer', {table: result});
+			});
+		});
+
+		app.post('/shipment', function (req, res){
+			//	console.log('got request');
+			var invoiceNum = req.body.invoice;
+			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from ShipmentLaunchpadSlot";
+			} else {
+				sql = "select *  from ShipmentLaunchpadSlot where ";
+				sql += "InvoiceNum = " + invoiceNum;
+				sql = sql.slice(0, -5);
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+				console.log(Object.keys(result[0]));
+				res.render('officer', 
+				{
+					table: result,
+				});
 			});
 		});
     }
