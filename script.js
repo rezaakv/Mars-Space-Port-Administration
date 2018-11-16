@@ -78,7 +78,7 @@ app.post('/', function (req, res) {
 				sql = "select * from Rocket";
 			} else {
 				sql = "select * from Rocket where ";
-				if (capacity != "") sql += "Capacity > + capacity";
+				if (capacity != "") sql += "Capacity > "+ capacity;
 				sql = sql.slice(0, -5);
 			}
 			//console.log(sql);
