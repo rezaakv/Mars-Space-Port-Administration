@@ -71,6 +71,25 @@ app.post('/', function (req, res) {
 			});
 		});
 
+		app.post('/rocketByCapacity', function(req, res){
+			var capacity = req.body.capacity;
+			var name = req.body.Name;
+			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Rocket";
+			} else {
+				sql = "select * from Rocket where ";
+				if (capacity != "") sql += "Capacity > "+ capacity;
+				sql = sql.slice(0, -5);
+			}
+			//console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+				//console.log(table);
+                res.render('officer', {table: result}); // officer need to be changed to company view
+			});
+
+		});
+
 		app.post('/deleteAstro', function (req, res){
 			console.log("deleteClicked")
 			var astroID = req.body.AstroID;
