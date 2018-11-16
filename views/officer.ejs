@@ -23,7 +23,7 @@
 
 		<!-- Side nav bar -->
 			<ul class="nav nav-pills nav-stacked">
-			  	<li role="presentation"><a href="#"><form method="post" action="astro"><button>Astronaut</button></form></a></li>
+			  	<li role="presentation"><a href="#"><form method="post" action="astro"><button id="hidden-form">Astronaut</button></form></a></li>
   				<li role="presentation"><a href="#">Crew</a></li>
 				<li role="presentation"><a href="#">Company</a></li>	
 				<li role="presentation"><a href="#">Astronaut</a></li>
@@ -50,8 +50,9 @@
    			<tr>
      			<td><%= table[i].AstroID %></td>
      			<td><%= table[i].Name %></td>
-			<td><form method="post" action="deleteAstro"><input type="hidden" name="AstroID" id="AstroID" value=<%= table[i].AstroID %>>
-			<button id="delete">delete</button></form></td>
+			<td><a href="#"><form method="post" action="deleteAstro">
+			<input type="hidden" name="AstroID" id="AstroID" value=<%= table[i].AstroID %>>
+			<button id="hidden-form">delete</button></form></a></td>
    			</tr>
 			<% } %>
 			</table>

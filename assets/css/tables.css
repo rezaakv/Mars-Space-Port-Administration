@@ -4,9 +4,11 @@
 	width: 25%;
 }
 
+form {
+	margin: 0;
+}
 
-
-#delete {
+#hidden-form {
     margin: 0;
     background: transparent;
     border: 0;
