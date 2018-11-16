@@ -12,7 +12,9 @@ CREATE TABLE IF NOT EXISTS Crew (
     AstroID INT,
     CompanyID INT REFERENCES Company,
     PRIMARY KEY (AstroID),
-    FOREIGN KEY (AstroID) REFERENCES Astronaut (AstroID),
+    FOREIGN KEY (AstroID) REFERENCES Astronaut (AstroID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     FOREIGN KEY (CompanyID) REFERENCES Company (CompanyID)
     );
 
@@ -52,6 +54,8 @@ CREATE TABLE IF NOT EXISTS Officer(
     AstroID INT NOT NULL,
     PRIMARY KEY (AstroID),
     FOREIGN KEY (AstroID) REFERENCES Astronaut (AstroID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
     -- ON DELETE CASCADE
     );
 
@@ -74,6 +78,8 @@ CREATE TABLE IF NOT EXISTS ShipmentLaunchpadSlot(
     ,
     FOREIGN KEY (CargoID) REFERENCES Cargo (CargoID),
     FOREIGN KEY (AstroID) REFERENCES Officer (AstroID)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE
 -- ON UPDATE CASCADE
 -- FOREIGN KEY (Port#, Location, StartDate, EndDate, StartTime, EndTime) REFERENCES LaunchpadSlot
 -- ON DELETE NO ACTION
@@ -85,7 +91,9 @@ CREATE TABLE IF NOT EXISTS CrewShipment(
     AstroID INT NOT NULL,
     InvoiceNum INT NOT NULL,
     PRIMARY KEY (AstroID, InvoiceNum),
-    FOREIGN KEY (AstroID) REFERENCES Crew (AstroID),
+    FOREIGN KEY (AstroID) REFERENCES Crew (AstroID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     FOREIGN KEY (InvoiceNum) REFERENCES ShipmentLaunchpadSlot (InvoiceNum)
     -- ON DELETE CASCADE
     );
@@ -95,6 +103,8 @@ CREATE TABLE IF NOT EXISTS Passenger(
     RequiresAssistance CHAR(3),
     PRIMARY KEY (AstroID),
     FOREIGN KEY (AstroID) REFERENCES Astronaut (AstroID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE
     -- ON DELETE CASCADE
     );
 
@@ -102,7 +112,9 @@ CREATE TABLE IF NOT EXISTS CarryPassengerShipment(
     AstroID INT NOT NULL,
     InvoiceNum INT NOT NULL,
     PRIMARY KEY (AstroID, InvoiceNum),
-    FOREIGN KEY (AstroID) REFERENCES Crew (AstroID),
+    FOREIGN KEY (AstroID) REFERENCES Crew (AstroID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
     FOREIGN KEY (InvoiceNum) REFERENCES ShipmentLaunchpadSlot (InvoiceNum)
     -- ON DELETE CASCADE
     );
