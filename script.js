@@ -72,13 +72,13 @@ app.post('/', function (req, res) {
 		});
 
 		app.post('/rocketByCapacity', function(req, res){
-			var capacity = req.body.Capacity;
+			var capacity = req.body.capacity;
 			var name = req.body.Name;
 			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
 				sql = "select * from Rocket";
 			} else {
-				sql = "select RocketID  from Rocket where ";
-				if (capacity != "") sql += "Capacity >'" + capacity + "'" + " AND ";
+				sql = "select * from Rocket where ";
+				if (capacity != "") sql += "Capacity > + capacity";
 				sql = sql.slice(0, -5);
 			}
 			//console.log(sql);
