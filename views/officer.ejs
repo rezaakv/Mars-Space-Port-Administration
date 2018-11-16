@@ -79,11 +79,18 @@
 			</div>
 			
 			<table class="table">
-			<tr><td>AstroID</td><td>Name</td></tr>
+				<tr>
+					<% let tableHeadings = Object.keys(table[0]);
+					for(let head of tableHeadings) { %>
+						<td><%= head %></td>
+					<% } %>
+				</tr>
+
 			<% for(var i=0; i < table.length; i++) { %>
    			<tr>
-     			<td><%= table[i].AstroID %></td>
-     			<td><%= table[i].Name %></td>
+			<% for (let cell of tableHeadings) { %>
+				<td><%= table[i][cell] %></td>
+			<% } %>
 			<td><a href="#"><form method="post" action="deleteAstro">
 			<input type="hidden" name="AstroID" id="AstroID" value=<%= table[i].AstroID %>>
 			<button id="hidden-form">delete</button></form></a></td>
@@ -106,7 +113,7 @@
 			</footer> -->
 
 		<!-- Scripts -->
-			<script src="assets/js/main.js"></script>
+			<script src="../script.js"></script>
 
 	</body>
 </html>

@@ -121,8 +121,11 @@ app.post('/', function (req, res) {
 			console.log(sql);
 			con.query(sql, function (err, result) {
                 if (err) throw err;
-                //console.log(table);
-                res.render('officer', {table: result});
+				console.log(Object.keys(result[0]));
+				res.render('officer', 
+				{
+					table: result,
+				});
 			});
 		});
     }
