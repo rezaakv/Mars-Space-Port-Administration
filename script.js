@@ -55,8 +55,7 @@ app.post('/', function (req, res) {
 	//	console.log('got request');
 		var astroID = req.body.AstroID;
 		var name = req.body.Name;
-		console.log(req.body)
-		if (astroID == "" && name == "") { // || (name=="" && isNaN(astroID))
+		if ((astroID == undefined && name == undefined) || (astroID == "" && name == "")) { // || (name=="" && isNaN(astroID))
 			sql = "select * from Astronaut";
 		} else {
 			sql = "select *  from Astronaut where ";
@@ -71,6 +70,26 @@ app.post('/', function (req, res) {
                         res.render('officer', {table: result});
                 });
 	
+
+	});
+
+	app.post('/deleteAstro', function (req, res){
+		console.log("deleteClicked")
+		var astroID = req.body.AstroID;
+		console.log(astroID);
+		
+		sql = "delete from Astronaut where AstroID = "+astroID;
+		console.log(sql);
+                con.query(sql, function (err, result) {
+                        if (err) throw err;
+                        //console.log(table);
+			con.query("select * from Astronaut", function(err, result){
+				if (err) throw err;
+                        	res.render('officer', {table: result});
+			})
+                });
+		
+
 
 	});
     }

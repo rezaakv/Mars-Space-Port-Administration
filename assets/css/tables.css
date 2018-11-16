@@ -5,6 +5,15 @@
 }
 
 
+
+#delete {
+    margin: 0;
+    background: transparent;
+    border: 0;
+    width: min-content;
+    height: min-content;
+}
+
 .panel {
 	position: absolute;
 	width: 65%;
