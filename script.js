@@ -56,7 +56,7 @@ app.post('/', function (req, res) {
 		var astroID = req.body.AstroID;
 		var name = req.body.Name;
 		console.log(req.body)
-		if (astroID == "" && name == "") {
+		if (astroID == "" && name == "") { // || (name=="" && isNaN(astroID))
 			sql = "select * from Astronaut";
 		} else {
 			sql = "select *  from Astronaut where ";
