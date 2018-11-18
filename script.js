@@ -59,7 +59,9 @@ app.post('/', function (req, res) {
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+                if (err) { 
+                	let result = {};
+                }
                 //console.log(table);
                 res.render('officer', {table: result});
 			});
@@ -73,7 +75,9 @@ app.post('/', function (req, res) {
 			sql = "delete from Astronaut where AstroID = "+astroID;
 			console.log(sql);
             con.query(sql, function (err, result) {
-                if (err) throw err;
+                if (err) { 
+                	let result = {};
+                }
                 //console.log(table);
 				con.query("select * from Astronaut", function(err, result){
 					if (err) throw err;
@@ -98,7 +102,9 @@ app.post('/', function (req, res) {
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+                if (err) { 
+                	let result = {};
+                }
                 //console.log(table);
                 res.render('company', {table: result});
 			});
@@ -133,7 +139,9 @@ app.post('/', function (req, res) {
 			}
 			//console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+                if (err) { 
+                	let result = {};
+                }
 				//console.log(table);
                 res.render('company', {table: result}); // officer need to be changed to company view
 			});
@@ -153,7 +161,9 @@ app.post('/', function (req, res) {
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+                if (err) { 
+                	let result = {};
+                }
 				console.log(Object.keys(result[0]));
 				res.render('shipment', 
 				{
