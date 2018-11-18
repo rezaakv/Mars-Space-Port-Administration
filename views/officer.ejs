@@ -22,7 +22,7 @@
 			</header> -->
 
 		<!-- Side nav bar -->
-			<ul class="nav nav-pills nav-stacked">
+			<ul class="nav nav-pills nav-stacked navbar-fixed-top">
 
 				<!-- Astronaut: Find, Insert, Update, Delete -->
 				<li role="presentation">
@@ -49,7 +49,7 @@
 					<a href="#">
 						<form method="post" action="shipment">
 							<button id="hidden-form">Shipment</button>
-							<input type="hidden" invoice="">
+							<input type="hidden">
 						</form>
 					</a>
 				</li>
@@ -78,12 +78,14 @@
 			</form>
 			</div>
 			
+			<div id="result">
 			<table class="table">
 				<tr>
 					<% let tableHeadings = Object.keys(table[0]);
 					for(let head of tableHeadings) { %>
 						<td><%= head %></td>
 					<% } %>
+					<td>&nbsp;</td>
 				</tr>
 
 			<% for(var i=0; i < table.length; i++) { %>
@@ -98,6 +100,7 @@
 			<% } %>
 			</table>
 			
+			</div>
 			</div>
 		<!-- Footer
 			<footer id="footer">
