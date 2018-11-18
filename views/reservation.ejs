@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>MSPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/tables.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<!-- <header id="header">
+				<h1>Mars Space Port Administration</h1>
+				<p>Brought to you by Elon Musk.</p>
+			</header> -->
+
+		<!-- Side nav bar -->
+			<% include partials/sidebar %>
+
+		<!-- Query Form and result-->
+			<div class="panel panel-transparent">
+				<div class="panel-heading">
+					Make Reservation
+				</div>
+
+				<div class="panel-body">
+					<form id="reservation" method="post" action="makeReservation">
+						<input type="date" name="reqDate" id="reqDate" />
+						<input type="text" name="destination" id="destination" placeholder="Destination" />
+						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+						<input type="text" pattern="[0-9]{0,100}" name="RocketID" id="RocketID" placeholder="RocketID" />
+						<input type="submit" />
+					</form>
+				</div>
+			
+
+		<!-- Footer
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
