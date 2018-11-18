@@ -123,7 +123,24 @@ app.post('/', function (req, res) {
 			con.query(sql, function (err, result) {
                 if (err) throw err;
                 //console.log(table);
-                res.render('officer', {table: result});
+                res.render('company', {table: result});
+			});
+		});
+
+		app.post('/companyCrew', function (req, res){
+			//	console.log('got request');
+			var companyID = req.body.companyID;
+			if ((companyID == undefined) || (companyID == "")) {
+				sql = "select * from Crew, Astronaut";
+			} else {
+				sql = "select * from Crew, Astronaut where ";
+				sql += "CompanyID = " + companyID;
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+                //console.log(table);
+                res.render('company', {table: result});
 			});
 		});
 
