@@ -8,6 +8,16 @@ form {
 	margin: 0;
 }
 
+.navbar-fixed-top {
+	top: 10%;
+	left: 5%
+}
+
+
+#result {
+	overflow-x: auto;
+}
+
 #hidden-form {
     margin: 0;
     background: transparent;
@@ -20,6 +30,7 @@ form {
 	position: absolute;
 	width: 65%;
 	right: 4%;
+	top: 10%;
 }
 
 .panel-transparent {
