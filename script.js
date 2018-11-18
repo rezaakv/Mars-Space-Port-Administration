@@ -35,21 +35,15 @@ app.post('/', function (req, res) {
 			res.render('index', {err_msg: err_msg});
     	} else {
 		var table = [];
-		//res.render('officer', {table: table})
 		console.log('officer rendered');
-		//console.log(con);
-  		//app.get('/#', function (req, res){
-		//	console.log('listening to officer')
-		//console.log(con);
 		let sql = "select * from Astronaut";
     	con.query(sql, function (err, result) {
         	if (err) throw err;
 			//console.log(table);
 			res.render('officer', {table: result});
 		});
-		//});
-		//console.log(table)
-		//res.render('officer', {table: table});
+
+		// Astronaut Queries
 
 		app.post('/astro', function (req, res){
 			//	console.log('got request');
@@ -71,25 +65,6 @@ app.post('/', function (req, res) {
 			});
 		});
 
-		app.post('/rocketByCapacity', function(req, res){
-			var capacity = req.body.capacity;
-			var name = req.body.Name;
-			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
-				sql = "select * from Rocket";
-			} else {
-				sql = "select * from Rocket where ";
-				if (capacity != "") sql += "Capacity > "+ capacity;
-				sql = sql.slice(0, -5);
-			}
-			//console.log(sql);
-			con.query(sql, function (err, result) {
-                if (err) throw err;
-				//console.log(table);
-                res.render('officer', {table: result}); // officer need to be changed to company view
-			});
-
-		});
-
 		app.post('/deleteAstro', function (req, res){
 			console.log("deleteClicked")
 			var astroID = req.body.AstroID;
@@ -106,6 +81,8 @@ app.post('/', function (req, res) {
 				})
 			});
 		});
+
+		// Company Queries
 
 		app.post('/company', function (req, res){
 			//	console.log('got request');
@@ -144,6 +121,26 @@ app.post('/', function (req, res) {
 			});
 		});
 
+		app.post('/rocketByCapacity', function(req, res){
+			var capacity = req.body.capacity;
+			var name = req.body.Name;
+			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Rocket";
+			} else {
+				sql = "select * from Rocket where ";
+				if (capacity != "") sql += "Capacity > "+ capacity;
+				sql = sql.slice(0, -5);
+			}
+			//console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+				//console.log(table);
+                res.render('company', {table: result}); // officer need to be changed to company view
+			});
+		});
+
+		// Shipment Queries
+
 		app.post('/shipment', function (req, res){
 			//	console.log('got request');
 			var invoiceNum = req.body.invoice;
@@ -158,7 +155,7 @@ app.post('/', function (req, res) {
 			con.query(sql, function (err, result) {
                 if (err) throw err;
 				console.log(Object.keys(result[0]));
-				res.render('officer', 
+				res.render('shipment', 
 				{
 					table: result,
 				});

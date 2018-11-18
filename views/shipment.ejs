@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+<script>
+	function showAstroForm() {
+		let selectBox = document.getElementById("selection");
+		let userInput = selectBox[selectBox.selectedIndex].value;
+		console.log(userInput);
+		document.getElementById("companyFind").style.visibility = "hidden";
+		document.getElementById("companyFindCrew").style.visibility = "hidden";
+		document.getElementById("companyValue").style.visibility = "hidden";
+		document.getElementById("companyRocket").style.visibility = "hidden";
+		document.getElementById("rocketWeight").style.visibility = "hidden";
+		if (userInput === "Find Company") {
+			document.getElementById("companyFind").style.visibility = "visible";
+		} else if (userInput === "Find Crew") {
+			document.getElementById("companyFindCrew").style.visibility = "visible";
+		} else if (userInput === "Find Cargo Value") {
+			document.getElementById("companyValue").style.visibility = "visible";
+		} else if (userInput === "Find Company Rockets") {
+			document.getElementById("companyRocket").style.visibility = "visible";
+		} else if (userInput === "Find Rockets by Max Weight") {
+			document.getElementById("rocketWeight").style.visibility = "visible";
+		}
+	}
+
+</script>
+<html>
+	<head>
+		<title>MSPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/tables.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<!-- <header id="header">
+				<h1>Mars Space Port Administration</h1>
+				<p>Brought to you by Elon Musk.</p>
+			</header> -->
+
+		<!-- Side nav bar -->
+			<ul class="nav nav-pills nav-stacked navbar-fixed-top">
+
+				<!-- Astronaut: Find, Insert, Update, Delete -->
+				<li role="presentation">
+					<a href="#">
+						<form method="post" action="astro">
+							<button id="hidden-form">Astronaut</button>
+							<input type="hidden" name="" id="">
+						</form>
+					</a>
+				</li>
+
+				<!-- Company: Find (CompanyID, Name), Find (Crew names, AstroIDs), Find(aggregate cargo value), Find (Rocket by company), Find (Rocket by weight) -->
+				<li role="presentation">
+					<a href="#">
+						<form method="post" action="company">
+							<button id="hidden-form">Company</button>
+							<input type="hidden" name="" id="">
+						</form>
+					</a>
+				</li>
+
+				<!-- Shipment: Find (shipment), Find (departed Shipments), Insert (Reservation), Find (require assistance, invoice) -->
+				<li role="presentation">
+					<a href="#">
+						<form method="post" action="shipment">
+							<button id="hidden-form">Shipment</button>
+							<input type="hidden">
+						</form>
+					</a>
+				</li>
+				
+			</ul>
+
+		<!-- Query Form and result-->
+			<div class="panel panel-transparent">
+				<div class="panel-heading">
+
+					<!-- Company Table Forms -->
+					<div>
+						<select id="selection" class="selectpicker" data-style="btn-info" name="selectpicker" onchange="return showAstroForm()">
+				   			<optgroup label="Select Action">
+					   			<option name="" value="0">Select Action</option>
+					  			<option name="Find Company" value="Find Company">Find Company</option>
+					   			<option name="Find Crew" value="Find Crew">Find Crew</option>
+					   			<option name="Find Cargo Value" value="Find Cargo Value">Find Cargo Value</option>
+					   			<option name="Find Company Rockets" value="Find Company Rockets">Find Company Rockets</option>
+					   			<option name="Find Rockets by Max Weight" value="Find Rockets by Max Weight">Find Rockets by Max Weight</option>
+				   			</optgroup>
+			  			</select>
+					</div>
+					
+					<!-- Company Find -->
+					<form id="companyFind" method="post" action="company" style="visibility: hidden;">
+						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+						<input type="text" name="Name" id="Name" placeholder="Name" />
+						<input type="submit" />
+					</form>
+				
+					<!-- Company Find Crew -->
+					<form id="companyFindCrew" method="post" action="companyCrew" style="visibility: hidden;">
+						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+						<input type="submit" />
+					</form>
+
+					<!-- Company Value -->
+					<form id="companyValue" method="post" action="companyValue" style="visibility: hidden;">
+							<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+							<input type="submit" />
+					</form>
+					
+					<!-- Company Rocket -->
+					<form id="companyRocket" method="post" action="companyRocket" style="visibility: hidden;">
+						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+						<input type="submit" />
+					</form>
+
+					<!-- Rocket Weight -->
+					<form id="rocketWeight" method="post" action="rocketWeight" style="visibility: hidden;">
+						<input type="text" name="weight" id="weight" placeholder="Min Weight" />
+						<input type="submit" />
+					</form>
+
+				</div>
+			
+			<div id="result">
+			<table class="table">
+				<tr>
+					<% if (table.length > 0) {
+						let tableHeadings = Object.keys(table[0]);
+					for(let head of tableHeadings) { %>
+						<td><%= head %></td>
+					<% } %>
+					<td>&nbsp;</td>
+				</tr>
+
+			<% for(var i=0; i < table.length; i++) { %>
+   			<tr>
+			<% for (let cell of tableHeadings) { %>
+				<td><%= table[i][cell] %></td>
+			<% } }%>
+   			</tr>
+			<% } %>
+			</table>
+			
+			</div>
+			</div>
+		<!-- Footer
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
