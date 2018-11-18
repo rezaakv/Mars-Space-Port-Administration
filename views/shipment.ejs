@@ -10,21 +10,21 @@
 		let selectBox = document.getElementById("selection");
 		let userInput = selectBox[selectBox.selectedIndex].value;
 		console.log(userInput);
-		document.getElementById("companyFind").style.visibility = "hidden";
-		document.getElementById("companyFindCrew").style.visibility = "hidden";
-		document.getElementById("companyValue").style.visibility = "hidden";
-		document.getElementById("companyRocket").style.visibility = "hidden";
-		document.getElementById("rocketWeight").style.visibility = "hidden";
+		document.getElementById("companyFind").style.display = "none";
+		document.getElementById("companyFindCrew").style.display = "none";
+		document.getElementById("companyValue").style.display = "none";
+		document.getElementById("companyRocket").style.display = "none";
+		document.getElementById("rocketWeight").style.display = "none";
 		if (userInput === "Find Company") {
-			document.getElementById("companyFind").style.visibility = "visible";
+			document.getElementById("companyFind").style.display = "flex";
 		} else if (userInput === "Find Crew") {
-			document.getElementById("companyFindCrew").style.visibility = "visible";
+			document.getElementById("companyFindCrew").style.display = "flex";
 		} else if (userInput === "Find Cargo Value") {
-			document.getElementById("companyValue").style.visibility = "visible";
+			document.getElementById("companyValue").style.display = "flex";
 		} else if (userInput === "Find Company Rockets") {
-			document.getElementById("companyRocket").style.visibility = "visible";
+			document.getElementById("companyRocket").style.display = "flex";
 		} else if (userInput === "Find Rockets by Max Weight") {
-			document.getElementById("rocketWeight").style.visibility = "visible";
+			document.getElementById("rocketWeight").style.display = "flex";
 		}
 	}
 
