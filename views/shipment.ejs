@@ -10,21 +10,18 @@
 		let selectBox = document.getElementById("selection");
 		let userInput = selectBox[selectBox.selectedIndex].value;
 		console.log(userInput);
-		document.getElementById("companyFind").style.display = "none";
-		document.getElementById("companyFindCrew").style.display = "none";
-		document.getElementById("companyValue").style.display = "none";
-		document.getElementById("companyRocket").style.display = "none";
-		document.getElementById("rocketWeight").style.display = "none";
-		if (userInput === "Find Company") {
-			document.getElementById("companyFind").style.display = "flex";
-		} else if (userInput === "Find Crew") {
-			document.getElementById("companyFindCrew").style.display = "flex";
-		} else if (userInput === "Find Cargo Value") {
-			document.getElementById("companyValue").style.display = "flex";
-		} else if (userInput === "Find Company Rockets") {
-			document.getElementById("companyRocket").style.display = "flex";
-		} else if (userInput === "Find Rockets by Max Weight") {
-			document.getElementById("rocketWeight").style.display = "flex";
+		document.getElementById("shipmentFind").style.display = "none";
+		document.getElementById("shipmentFindDeparted").style.display = "none";
+		document.getElementById("reqAssistance").style.display = "none";
+		document.getElementById("insertReservation").style.display = "none";
+		if (userInput === "Find Shipment") {
+			document.getElementById("shipmentFind").style.display = "flex";
+		} else if (userInput === "Find Departed Shipment") {
+			document.getElementById("shipmentFindDeparted").style.display = "flex";
+		} else if (userInput === "Find Passenger Require Assistance") {
+			document.getElementById("reqAssistance").style.display = "flex";
+		} else if (userInput === "Insert Reservation") {
+			document.getElementById("insertReservation").style.display = "flex";
 		}
 	}
 </script>
@@ -89,11 +86,10 @@
 						<select id="selection" class="selectpicker" data-style="btn-info" name="selectpicker" onchange="return showAstroForm()">
 				   			<optgroup label="Select Action">
 					   			<option name="" value="0">Select Action</option>
-					  			<option name="Find Company" value="Find Company">Find Company</option>
-					   			<option name="Find Crew" value="Find Crew">Find Crew</option>
-					   			<option name="Find Cargo Value" value="Find Cargo Value">Find Cargo Value</option>
-					   			<option name="Find Company Rockets" value="Find Company Rockets">Find Company Rockets</option>
-					   			<option name="Find Rockets by Max Weight" value="Find Rockets by Max Weight">Find Rockets by Max Weight</option>
+					  			<option name="Find Shipment" value="Find Shipment">Find Shipment</option>
+					   			<option name="Find Departed Shipment" value="Find Departed Shipment">Find Departed Shipment</option>
+					   			<option name="Find Passenger Require Assistance" value="Find Passenger Require Assistance">Find Passenger Require Assistance</option>
+					   			<option name="Insert Reservation" value="Insert Reservation">Insert Reservation</option>
 				   			</optgroup>
 			  			</select>
 					</div>
@@ -110,28 +106,22 @@
 						<input type="submit" />
 					</form>
 
-					<!-- Insert Reservation -->
-					<form id="insertReservation" method="post" action="insertReservation" style="display: none">
-							<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+					<!-- Find RequireAssistance -->
+					<form id="reqAssistance" method="post" action="reqAssistance" style="display: none">
+							<input type="text" pattern="[0-9]{0,100}" name="InvoiceNum" id="InvoiceNum" placeholder="InvoiceNum" />
 							<input type="submit" />
 					</form>
 					
-					<!-- Company Rocket -->
-					<form id="companyRocket" method="post" action="companyRocket" style="display: none">
+					<!-- Insert Reservation -->
+					<form id="insertReservation" method="post" action="insertReservation" style="display: none">
 							<input type="text" pattern="[0-9]{0,100}" name="ReserveID" id="ReserveID" placeholder="ReserveID" />
-							<input type="text" pattern="[0-9]{0,100}" name="reqDate" id="reqDate" placeholder="Requested Date" />
-							<input type="text" pattern="[0-9]{0,100}" name="location" id="location" placeholder="Location" />
+							<input type="text" name="reqDate" id="reqDate" placeholder="Requested Date" />
+							<input type="text" name="location" id="location" placeholder="Location" />
 							<input type="text" pattern="[0-9]{0,100}" name="portNum" id="portNum" placeholder="Port Number" />
-							<input type="text" pattern="[0-9]{0,100}" name="startDate" id="startDate" placeholder="Start Date" />
-							<input type="text" pattern="[0-9]{0,100}" name="endDate" id="endDate" placeholder="End Date" />
-							<input type="text" pattern="[0-9]{0,100}" name="startTime" id="startTime" placeholder="Start Time" />
-							<input type="text" pattern="[0-9]{0,100}" name="endTime" id="endTime" placeholder="End Time" />
-						<input type="submit" />
-					</form>
-
-					<!-- Rocket Weight -->
-					<form id="rocketWeight" method="post" action="rocketWeight" style="display: none">
-						<input type="text" name="weight" id="weight" placeholder="Min Weight" />
+							<input type="text" name="startDate" id="startDate" placeholder="Start Date" />
+							<input type="text" name="endDate" id="endDate" placeholder="End Date" />
+							<input type="text" name="startTime" id="startTime" placeholder="Start Time" />
+							<input type="text" name="endTime" id="endTime" placeholder="End Time" />
 						<input type="submit" />
 					</form>
 
