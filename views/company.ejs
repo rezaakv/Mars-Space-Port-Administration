@@ -13,12 +13,18 @@
 		document.getElementById("companyFind").style.visibility = "hidden";
 		document.getElementById("companyFindCrew").style.visibility = "hidden";
 		document.getElementById("companyValue").style.visibility = "hidden";
+		document.getElementById("companyRocket").style.visibility = "hidden";
+		document.getElementById("rocketWeight").style.visibility = "hidden";
 		if (userInput === "Find Company") {
 			document.getElementById("companyFind").style.visibility = "visible";
 		} else if (userInput === "Find Crew") {
 			document.getElementById("companyFindCrew").style.visibility = "visible";
-		} else if (userInput === "Insert") {
+		} else if (userInput === "Find Cargo Value") {
 			document.getElementById("companyValue").style.visibility = "visible";
+		} else if (userInput === "Find Company Rockets") {
+			document.getElementById("companyRocket").style.visibility = "visible";
+		} else if (userInput === "Find Rockets by Max Weight") {
+			document.getElementById("rocketWeight").style.visibility = "visible";
 		}
 	}
 
@@ -86,7 +92,9 @@
 					   			<option name="" value="0">Select Action</option>
 					  			<option name="Find Company" value="Find Company">Find Company</option>
 					   			<option name="Find Crew" value="Find Crew">Find Crew</option>
-					   			<option name="Insert" value="Insert">Find Cargo Value</option>
+					   			<option name="Find Cargo Value" value="Find Cargo Value">Find Cargo Value</option>
+					   			<option name="Find Company Rockets" value="Find Company Rockets">Find Company Rockets</option>
+					   			<option name="Find Rockets by Max Weight" value="Find Rockets by Max Weight">Find Rockets by Max Weight</option>
 				   			</optgroup>
 			  			</select>
 					</div>
@@ -106,7 +114,19 @@
 
 					<!-- Company Value -->
 					<form id="companyValue" method="post" action="companyValue" style="visibility: hidden;">
+							<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+							<input type="submit" />
+					</form>
+					
+					<!-- Company Rocket -->
+					<form id="companyRocket" method="post" action="companyRocket" style="visibility: hidden;">
 						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+						<input type="submit" />
+					</form>
+
+					<!-- Rocket Weight -->
+					<form id="rocketWeight" method="post" action="rocketWeight" style="visibility: hidden;">
+						<input type="text" name="weight" id="weight" placeholder="Min Weight" />
 						<input type="submit" />
 					</form>
 
