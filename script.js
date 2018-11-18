@@ -86,6 +86,30 @@ app.post('/', function (req, res) {
 			});
 		});
 
+		app.post('/astroInsert', function (req, res){
+			//	console.log('got request');
+			var astroID = req.body.AstroID;
+			var name = req.body.Name;
+			if ((astroID == undefined && name == undefined) || (astroID == "" && name == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Astronaut";
+			} else {
+				sql = "insert into Astronaut (AstroID, Name) Values ";
+				if (astroID != "") sql += "(" + astroID + ", \"";
+				if (name != "") sql += name + "\")"
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) { 
+                	let result = {};
+                }
+                //console.log(table);
+				con.query("select * from Astronaut", function(err, result){
+					if (err) throw err;
+					res.render('officer', {table: result});
+				})
+			});
+		});
+
 		// Company Queries
 
 		app.post('/company', function (req, res){
