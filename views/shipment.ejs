@@ -99,28 +99,34 @@
 			  			</select>
 					</div>
 					
-					<!-- Company Find -->
-					<form id="companyFind" method="post" action="company" style="visibility: hidden;">
-						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
-						<input type="text" name="Name" id="Name" placeholder="Name" />
+					<!-- Shipment Find -->
+					<form id="shipmentFind" method="post" action="shipment" style="visibility: hidden;">
+						<input type="text" pattern="[0-9]{0,100}" name="invoice" id="invoice" placeholder="InvoiceNum" />
 						<input type="submit" />
 					</form>
 				
-					<!-- Company Find Crew -->
-					<form id="companyFindCrew" method="post" action="companyCrew" style="visibility: hidden;">
+					<!-- Shipment Find Departed -->
+					<form id="shipmentFindDeparted" method="post" action="shipmentDeparted" style="visibility: hidden;">
 						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
 						<input type="submit" />
 					</form>
 
-					<!-- Company Value -->
-					<form id="companyValue" method="post" action="companyValue" style="visibility: hidden;">
+					<!-- Insert Reservation -->
+					<form id="insertReservation" method="post" action="insertReservation" style="visibility: hidden;">
 							<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
 							<input type="submit" />
 					</form>
 					
 					<!-- Company Rocket -->
 					<form id="companyRocket" method="post" action="companyRocket" style="visibility: hidden;">
-						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+							<input type="text" pattern="[0-9]{0,100}" name="ReserveID" id="ReserveID" placeholder="ReserveID" />
+							<input type="text" pattern="[0-9]{0,100}" name="reqDate" id="reqDate" placeholder="Requested Date" />
+							<input type="text" pattern="[0-9]{0,100}" name="location" id="location" placeholder="Location" />
+							<input type="text" pattern="[0-9]{0,100}" name="portNum" id="portNum" placeholder="Port Number" />
+							<input type="text" pattern="[0-9]{0,100}" name="startDate" id="startDate" placeholder="Start Date" />
+							<input type="text" pattern="[0-9]{0,100}" name="endDate" id="endDate" placeholder="End Date" />
+							<input type="text" pattern="[0-9]{0,100}" name="startTime" id="startTime" placeholder="Start Time" />
+							<input type="text" pattern="[0-9]{0,100}" name="endTime" id="endTime" placeholder="End Time" />
 						<input type="submit" />
 					</form>
 
