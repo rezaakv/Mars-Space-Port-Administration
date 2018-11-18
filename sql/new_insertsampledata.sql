@@ -106,170 +106,6 @@ INSERT INTO `Astronaut` (`AstroID`, `Name`) VALUES (297951, 'Mr. Johnnie Powlows
 
 
 #
-# TABLE STRUCTURE FOR: Cargo
-#
-
-
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (102078, 'MediumAquaMarine', 79943, 572976, 1533);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (120144, 'DarkBlue', 66253, 1660311, 5291);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (129533, 'DarkGoldenRod', 56169, 162508, 5306);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (141799, 'MistyRose', 81015, 804544, 4038);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (145400, 'CornflowerBlue', 54622, 2861087, 7899);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (155487, 'Red', 24259, 1259764, 5128);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (178193, 'Green', 40408, 1800042, 1413);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (195433, 'MediumAquaMarine', 53320, 3405416, 9515);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (196106, 'GoldenRod', 98403, 1925313, 3203);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (196511, 'SeaShell', 25617, 4899965, 6019);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (205003, 'Peru', 5539, 764105, 4865);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (211972, 'DarkSalmon', 28022, 2576088, 7229);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (215018, 'Lime', 19795, 1748238, 5740);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (220735, 'BlanchedAlmond', 67388, 698787, 3290);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (222019, 'Moccasin', 40118, 4468032, 3901);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (225042, 'Black', 24022, 1911454, 5504);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (230691, 'Teal', 21347, 2522826, 7431);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (233331, 'Gainsboro', 94486, 310413, 8055);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (234005, 'Green', 98468, 4985186, 8261);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (235384, 'WhiteSmoke', 28179, 4542737, 6583);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (235771, 'LemonChiffon', 61975, 755717, 3890);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (245922, 'Chartreuse', 98403, 1573928, 9329);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (261493, 'Plum', 20366, 4768347, 1598);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (263023, 'PapayaWhip', 27818, 1894954, 2944);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (267944, 'DarkMagenta', 92884, 2525245, 1914);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (270729, 'Chocolate', 77908, 3822123, 7907);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (280343, 'MidnightBlue', 66888, 4481199, 8771);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (287026, 'MediumSeaGreen', 75787, 640820, 1121);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (291650, 'Coral', 22652, 4109900, 1624);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (297173, 'Navy', 12423, 2346188, 8091);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (299891, 'Bisque', 23993, 4820600, 3631);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (301559, 'Yellow', 96506, 1523031, 4644);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (303805, 'PapayaWhip', 24528, 4480510, 8097);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (309014, 'PaleVioletRed', 70967, 3812516, 8371);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (320040, 'IndianRed ', 73020, 3449506, 4230);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (327530, 'DarkSalmon', 20483, 4256523, 7380);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (329981, 'SeaGreen', 39974, 4391538, 1922);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (348811, 'DeepPink', 84061, 2217063, 5840);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (350608, 'DarkSlateGray', 99501, 4988115, 5527);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (356278, 'LightSalmon', 73839, 2914989, 2815);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (358634, 'Gold', 92439, 4277966, 1323);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (369888, 'Ivory', 58219, 2391690, 9717);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (380923, 'LightSeaGreen', 53042, 3739873, 8461);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (388995, 'DarkKhaki', 7443, 2260553, 9596);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (391375, 'Tan', 20850, 2544331, 8701);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (391638, 'Wheat', 93895, 4692300, 1291);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (406272, 'LightSlateGray', 27118, 803691, 9851);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (412478, 'WhiteSmoke', 73894, 295539, 8416);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (433674, 'Tan', 52040, 3057222, 2420);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (435143, 'Wheat', 40547, 334966, 5479);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (442703, 'NavajoWhite', 46214, 4575828, 4488);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (449918, 'LemonChiffon', 28851, 309570, 5911);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (454457, 'Silver', 50045, 1896509, 3384);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (460600, 'CadetBlue', 21316, 3186196, 1762);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (461793, 'Gainsboro', 90635, 3299230, 9271);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (477536, 'Magenta', 18922, 1765142, 7783);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (492103, 'DarkSalmon', 67021, 4375319, 4973);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (509524, 'LightSlateGray', 45791, 1212108, 8881);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (513049, 'MediumSpringGreen', 51433, 2117284, 6524);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (516723, 'Lavender', 65271, 776633, 6709);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (531768, 'OrangeRed', 40798, 2902278, 8427);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (532702, 'HoneyDew', 10330, 2613147, 1285);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (543978, 'Lavender', 34754, 3231837, 2245);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (575301, 'Brown', 79902, 1451518, 3181);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (575384, 'RoyalBlue', 35359, 3869403, 4350);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (577229, 'Fuchsia', 24664, 296010, 2643);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (577332, 'Gold', 42423, 2700068, 4629);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (580270, 'SandyBrown', 8227, 320599, 5510);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (583522, 'Blue', 66448, 919142, 3397);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (589664, 'MidnightBlue', 62267, 879576, 9574);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (599932, 'Maroon', 32072, 414474, 8260);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (605785, 'Purple', 81407, 169117, 8026);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (611087, 'MediumPurple', 49881, 2832761, 1994);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (611159, 'Purple', 21565, 485872, 1234);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (630256, 'DarkSlateBlue', 82764, 299947, 4102);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (630830, 'PeachPuff', 42242, 2115702, 7573);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (641970, 'MediumSeaGreen', 78639, 2683450, 7372);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (651834, 'AliceBlue', 71888, 2926830, 9298);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (654431, 'LightGray', 80149, 4288781, 5693);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (655718, 'Tan', 24452, 4636348, 5845);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (658371, 'DimGrey', 8441, 3743156, 8239);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (664481, 'Indigo ', 52986, 1726704, 6803);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (668702, 'SaddleBrown', 84137, 4310964, 7321);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (688872, 'Lime', 56089, 4903774, 7467);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (689263, 'GreenYellow', 28526, 4927959, 1974);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (689815, 'LawnGreen', 42532, 1769199, 4084);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (691164, 'DarkCyan', 4499, 1610577, 4758);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (696313, 'LightSeaGreen', 56317, 2906869, 5701);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (698336, 'Thistle', 4165, 3807779, 6817);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (699475, 'DarkMagenta', 16727, 4070304, 8359);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (706488, 'YellowGreen', 67815, 3120952, 1559);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (713303, 'DarkOrchid', 36757, 4682566, 9116);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (713457, 'LightGray', 85516, 906118, 5391);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (715428, 'Beige', 7544, 956132, 3047);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (740296, 'Olive', 49090, 826614, 8838);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (746997, 'SlateGray', 36812, 4495600, 8457);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (759810, 'AntiqueWhite', 64999, 4775567, 4223);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (763503, 'CornflowerBlue', 77739, 3920400, 3831);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (772425, 'LightSalmon', 33071, 1286112, 4744);
-INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (784784, 'Red', 28063, 4360321, 1852);
-
-
-#
-# TABLE STRUCTURE FOR: CarryPassengerShipment
-#
-
-DROP TABLE IF EXISTS `CarryPassengerShipment`;
-
-CREATE TABLE `CarryPassengerShipment` (
-  `AstroID` int(11) NOT NULL,
-  `InvoiceNum` int(11) NOT NULL,
-  PRIMARY KEY (`AstroID`,`InvoiceNum`),
-  KEY `InvoiceNum` (`InvoiceNum`),
-  CONSTRAINT `CarryPassengerShipment_ibfk_1` FOREIGN KEY (`AstroID`) REFERENCES `Crew` (`AstroID`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `CarryPassengerShipment_ibfk_2` FOREIGN KEY (`InvoiceNum`) REFERENCES `ShipmentLaunchpadSlot` (`InvoiceNum`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (104031, 315398);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (106504, 318443);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (108918, 325597);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (109577, 330539);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (112379, 344060);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (113747, 355664);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (116958, 362089);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (117034, 363674);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (117119, 368576);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (122263, 370659);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (122800, 373806);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (125322, 375861);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (131029, 383268);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (131444, 385088);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (132664, 393314);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (133957, 396475);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (138420, 400921);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (138424, 402818);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (138681, 403015);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (141685, 416190);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (141874, 426979);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (143112, 428270);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (147234, 430809);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (149625, 433223);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (151629, 446453);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (152500, 451758);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (152612, 451879);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (154476, 453232);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (155790, 455045);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (156758, 461003);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (160902, 478123);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (163100, 486537);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (165415, 500600);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (165734, 519040);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (171643, 523355);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (171672, 532107);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (173383, 541696);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (176832, 543483);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (178836, 547773);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (180963, 567751);
-
-
-#
 # TABLE STRUCTURE FOR: Company
 #
 
@@ -422,116 +258,110 @@ INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (176832, 4488);
 INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (178836, 4629);
 INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (180963, 4644);
 
-
 #
-# TABLE STRUCTURE FOR: CrewShipment
-#
-
-
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (104031, 315398);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (106504, 318443);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (108918, 325597);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (109577, 330539);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (112379, 344060);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (113747, 355664);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (116958, 362089);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (117034, 363674);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (117119, 368576);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (122263, 370659);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (122800, 373806);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (125322, 375861);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (131029, 383268);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (131444, 385088);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (132664, 393314);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (133957, 396475);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (138420, 400921);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (138424, 402818);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (138681, 403015);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (141685, 416190);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (141874, 426979);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (143112, 428270);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (147234, 430809);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (149625, 433223);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (151629, 446453);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (152500, 451758);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (152612, 451879);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (154476, 453232);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (155790, 455045);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (156758, 461003);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (160902, 478123);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (163100, 486537);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (165415, 500600);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (165734, 519040);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (171643, 523355);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (171672, 532107);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (173383, 541696);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (176832, 543483);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (178836, 547773);
-INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (180963, 567751);
-
-
-#
-# TABLE STRUCTURE FOR: Officer
+# TABLE STRUCTURE FOR: Rocket
 #
 
-INSERT INTO `Officer` (`AstroID`) VALUES (138681);
-INSERT INTO `Officer` (`AstroID`) VALUES (141685);
-INSERT INTO `Officer` (`AstroID`) VALUES (143112);
-INSERT INTO `Officer` (`AstroID`) VALUES (147234);
-INSERT INTO `Officer` (`AstroID`) VALUES (149625);
-INSERT INTO `Officer` (`AstroID`) VALUES (199971);
-INSERT INTO `Officer` (`AstroID`) VALUES (202049);
-INSERT INTO `Officer` (`AstroID`) VALUES (202815);
-INSERT INTO `Officer` (`AstroID`) VALUES (205504);
-INSERT INTO `Officer` (`AstroID`) VALUES (243451);
-INSERT INTO `Officer` (`AstroID`) VALUES (245268);
-INSERT INTO `Officer` (`AstroID`) VALUES (246816);
-INSERT INTO `Officer` (`AstroID`) VALUES (247704);
-INSERT INTO `Officer` (`AstroID`) VALUES (264225);
-INSERT INTO `Officer` (`AstroID`) VALUES (265847);
-INSERT INTO `Officer` (`AstroID`) VALUES (266377);
-INSERT INTO `Officer` (`AstroID`) VALUES (270615);
-INSERT INTO `Officer` (`AstroID`) VALUES (275638);
-INSERT INTO `Officer` (`AstroID`) VALUES (282564);
-INSERT INTO `Officer` (`AstroID`) VALUES (284384);
-INSERT INTO `Officer` (`AstroID`) VALUES (285832);
-
-#
-# TABLE STRUCTURE FOR: Passenger
-#
-
-
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (104031, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (106504, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (108918, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (109577, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (112379, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (113747, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (116958, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (117034, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (117119, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (122263, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (122800, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (125322, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (131029, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (131444, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (132664, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (133957, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (138420, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (138424, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (138681, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (141685, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (141874, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (143112, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (147234, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (149625, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (151629, 'NO');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (152500, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (152612, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (154476, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (155790, 'YES');
-INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (156758, 'YES');
-
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (14286, '#003399', '55855.75', 8838);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19085, '#002288', '55411.38', 4865);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19383, '#0099ee', '35060.5', 8026);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (20711, '#00ee00', '88856.7', 4488);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (24345, '#0044cc', '101269.52', 6019);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (26815, '#002266', '77160.55', 3203);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (42061, '#000066', '102901.88', 7229);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (45441, '#008800', '107631.13', 8881);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (46574, '#0077dd', '24802.78', 5845);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (52368, '#00aaaa', '101597.75', 6817);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (59199, '#008855', '20611.65', 3047);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (78688, '#00bb77', '113972.29', 9515);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (85597, '#00ffff', '24295.5', 3384);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (86690, '#00bbff', '110419.72', 8427);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (102821, '#00ffdd', '20346.85', 8097);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (106571, '#009900', '55702.56', 2245);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (111131, '#007722', '38120.59', 8701);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (115938, '#006688', '28057.07', 8091);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (118425, '#00aa66', '33075.24', 8461);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (123330, '#0033dd', '9026.89', 8771);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (133474, '#0033bb', '129469.89', 4744);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (153985, '#00ee88', '67188.67', 6709);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (157369, '#00bbff', '108038.54', 1121);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (163077, '#00bb44', '98431.69', 5840);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (164398, '#0099cc', '31596.87', 7783);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (166678, '#00bb11', '33460.74', 3290);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (172905, '#005544', '83570.81', 9116);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (176713, '#00ffee', '55074.12', 4973);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (178660, '#000022', '91612.22', 9851);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (179299, '#00cc99', '125868.53', 8359);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (187983, '#00ffcc', '65045.13', 3901);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (188318, '#00bb33', '3002.11', 5479);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (190044, '#0022bb', '94925.02', 7431);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (200283, '#0033cc', '2289.98', 4102);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (215064, '#000000', '83275.26', 4230);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (217220, '#0088dd', '53665.72', 8055);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (223942, '#00dd55', '104486.3', 5291);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (225193, '#0077dd', '89455.79', 5504);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (225268, '#00dd33', '119128.65', 3631);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (227291, '#00aa44', '34803.41', 1994);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (228521, '#00aa44', '22543.22', 8416);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (228723, '#00aa11', '102976.78', 3181);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (229352, '#0066dd', '31235.89', 3397);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (231126, '#00cc55', '32869.16', 6583);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (241241, '#000066', '15703.98', 9717);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (242970, '#00ddff', '1816.13', 8457);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (244260, '#00aa44', '83210.72', 1285);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (252122, '#00cccc', '136639.31', 1559);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (261908, '#001199', '115369.49', 1234);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (269975, '#00ccff', '78367.29', 1914);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (272777, '#0088dd', '134808.52', 5740);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (273890, '#008877', '35528.07', 7321);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (289661, '#002299', '129521.12', 5391);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (292877, '#00aa00', '112846.28', 4644);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (296339, '#00aacc', '78773.16', 5693);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (297866, '#0000cc', '74705.54', 4629);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (309031, '#00cc55', '91755.74', 5701);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (310251, '#0099ff', '120399.35', 4350);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (311027, '#00ff33', '91162.18', 7372);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (313789, '#0099ff', '43628.87', 2944);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (314448, '#00ee77', '48362.6', 3890);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (319786, '#002200', '115086.46', 6524);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (321421, '#0000bb', '20364.27', 8239);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (322874, '#00aabb', '122826.41', 1852);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (324415, '#000033', '20494.44', 1413);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (326153, '#0088ff', '76688.13', 4223);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (326344, '#00cc22', '120977.06', 8371);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (327407, '#00ccdd', '29587.47', 7899);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (328396, '#0088aa', '63199.75', 7467);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (344307, '#0066bb', '22903.32', 1598);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (350423, '#000088', '109196.96', 1624);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (361937, '#001122', '79433.16', 1323);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (363153, '#00ee66', '131507.66', 5306);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (368808, '#0033dd', '63727.09', 5911);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (377666, '#002200', '122758.8', 5510);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (378632, '#006644', '134313.99', 7380);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (379285, '#00eeee', '50419.49', 5128);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (380268, '#002299', '122000.13', 7907);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (384522, '#00ff22', '23205.78', 8260);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (395514, '#00bb44', '125117.92', 1762);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (410392, '#00eeff', '89059.45', 2420);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (413077, '#002288', '121843.32', 1922);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (417581, '#00ff00', '73876.84', 7573);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (417934, '#0022bb', '130473.24', 9596);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (421538, '#0000ee', '1998.53', 8261);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (425652, '#0011ee', '5081.39', 9329);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (439329, '#00ee66', '99288.8', 2815);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (439673, '#00cc22', '38766.92', 3831);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (440380, '#0022bb', '31926.31', 1291);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (441863, '#004455', '9842.76', 6803);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (446123, '#006600', '88694.27', 9271);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (452161, '#007711', '135855.4', 4758);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (454526, '#009933', '43831.62', 4038);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (457639, '#005577', '37511.92', 4084);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (471678, '#004466', '74168.99', 5527);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (474873, '#00aa44', '59874.91', 1533);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (478397, '#00aabb', '105542.06', 9298);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (480724, '#0000ff', '25723.39', 2643);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (481631, '#00eeff', '34758.97', 9574);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (483001, '#00dd33', '49647.24', 1974);
 
 #
 # TABLE STRUCTURE FOR: Reservation
@@ -638,138 +468,292 @@ INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `Company
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (390445, '1993-12-25', 'South Africa', 9298, 457639);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (393964, '1991-05-15', 'Brazil', 1762, 59199);
 
+#
+# TABLE STRUCTURE FOR: Cargo
+#
+
+
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (102078, 'MediumAquaMarine', 79943, 572976, 1533);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (120144, 'DarkBlue', 66253, 1660311, 5291);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (129533, 'DarkGoldenRod', 56169, 162508, 5306);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (141799, 'MistyRose', 81015, 804544, 4038);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (145400, 'CornflowerBlue', 54622, 2861087, 7899);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (155487, 'Red', 24259, 1259764, 5128);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (178193, 'Green', 40408, 1800042, 1413);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (195433, 'MediumAquaMarine', 53320, 3405416, 9515);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (196106, 'GoldenRod', 98403, 1925313, 3203);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (196511, 'SeaShell', 25617, 4899965, 6019);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (205003, 'Peru', 5539, 764105, 4865);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (211972, 'DarkSalmon', 28022, 2576088, 7229);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (215018, 'Lime', 19795, 1748238, 5740);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (220735, 'BlanchedAlmond', 67388, 698787, 3290);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (222019, 'Moccasin', 40118, 4468032, 3901);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (225042, 'Black', 24022, 1911454, 5504);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (230691, 'Teal', 21347, 2522826, 7431);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (233331, 'Gainsboro', 94486, 310413, 8055);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (234005, 'Green', 98468, 4985186, 8261);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (235384, 'WhiteSmoke', 28179, 4542737, 6583);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (235771, 'LemonChiffon', 61975, 755717, 3890);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (245922, 'Chartreuse', 98403, 1573928, 9329);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (261493, 'Plum', 20366, 4768347, 1598);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (263023, 'PapayaWhip', 27818, 1894954, 2944);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (267944, 'DarkMagenta', 92884, 2525245, 1914);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (270729, 'Chocolate', 77908, 3822123, 7907);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (280343, 'MidnightBlue', 66888, 4481199, 8771);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (287026, 'MediumSeaGreen', 75787, 640820, 1121);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (291650, 'Coral', 22652, 4109900, 1624);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (297173, 'Navy', 12423, 2346188, 8091);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (299891, 'Bisque', 23993, 4820600, 3631);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (301559, 'Yellow', 96506, 1523031, 4644);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (303805, 'PapayaWhip', 24528, 4480510, 8097);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (309014, 'PaleVioletRed', 70967, 3812516, 8371);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (320040, 'IndianRed ', 73020, 3449506, 4230);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (327530, 'DarkSalmon', 20483, 4256523, 7380);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (329981, 'SeaGreen', 39974, 4391538, 1922);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (348811, 'DeepPink', 84061, 2217063, 5840);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (350608, 'DarkSlateGray', 99501, 4988115, 5527);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (356278, 'LightSalmon', 73839, 2914989, 2815);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (358634, 'Gold', 92439, 4277966, 1323);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (369888, 'Ivory', 58219, 2391690, 9717);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (380923, 'LightSeaGreen', 53042, 3739873, 8461);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (388995, 'DarkKhaki', 7443, 2260553, 9596);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (391375, 'Tan', 20850, 2544331, 8701);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (391638, 'Wheat', 93895, 4692300, 1291);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (406272, 'LightSlateGray', 27118, 803691, 9851);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (412478, 'WhiteSmoke', 73894, 295539, 8416);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (433674, 'Tan', 52040, 3057222, 2420);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (435143, 'Wheat', 40547, 334966, 5479);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (442703, 'NavajoWhite', 46214, 4575828, 4488);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (449918, 'LemonChiffon', 28851, 309570, 5911);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (454457, 'Silver', 50045, 1896509, 3384);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (460600, 'CadetBlue', 21316, 3186196, 1762);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (461793, 'Gainsboro', 90635, 3299230, 9271);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (477536, 'Magenta', 18922, 1765142, 7783);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (492103, 'DarkSalmon', 67021, 4375319, 4973);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (509524, 'LightSlateGray', 45791, 1212108, 8881);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (513049, 'MediumSpringGreen', 51433, 2117284, 6524);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (516723, 'Lavender', 65271, 776633, 6709);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (531768, 'OrangeRed', 40798, 2902278, 8427);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (532702, 'HoneyDew', 10330, 2613147, 1285);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (543978, 'Lavender', 34754, 3231837, 2245);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (575301, 'Brown', 79902, 1451518, 3181);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (575384, 'RoyalBlue', 35359, 3869403, 4350);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (577229, 'Fuchsia', 24664, 296010, 2643);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (577332, 'Gold', 42423, 2700068, 4629);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (580270, 'SandyBrown', 8227, 320599, 5510);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (583522, 'Blue', 66448, 919142, 3397);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (589664, 'MidnightBlue', 62267, 879576, 9574);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (599932, 'Maroon', 32072, 414474, 8260);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (605785, 'Purple', 81407, 169117, 8026);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (611087, 'MediumPurple', 49881, 2832761, 1994);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (611159, 'Purple', 21565, 485872, 1234);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (630256, 'DarkSlateBlue', 82764, 299947, 4102);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (630830, 'PeachPuff', 42242, 2115702, 7573);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (641970, 'MediumSeaGreen', 78639, 2683450, 7372);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (651834, 'AliceBlue', 71888, 2926830, 9298);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (654431, 'LightGray', 80149, 4288781, 5693);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (655718, 'Tan', 24452, 4636348, 5845);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (658371, 'DimGrey', 8441, 3743156, 8239);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (664481, 'Indigo ', 52986, 1726704, 6803);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (668702, 'SaddleBrown', 84137, 4310964, 7321);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (688872, 'Lime', 56089, 4903774, 7467);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (689263, 'GreenYellow', 28526, 4927959, 1974);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (689815, 'LawnGreen', 42532, 1769199, 4084);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (691164, 'DarkCyan', 4499, 1610577, 4758);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (696313, 'LightSeaGreen', 56317, 2906869, 5701);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (698336, 'Thistle', 4165, 3807779, 6817);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (699475, 'DarkMagenta', 16727, 4070304, 8359);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (706488, 'YellowGreen', 67815, 3120952, 1559);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (713303, 'DarkOrchid', 36757, 4682566, 9116);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (713457, 'LightGray', 85516, 906118, 5391);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (715428, 'Beige', 7544, 956132, 3047);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (740296, 'Olive', 49090, 826614, 8838);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (746997, 'SlateGray', 36812, 4495600, 8457);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (759810, 'AntiqueWhite', 64999, 4775567, 4223);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (763503, 'CornflowerBlue', 77739, 3920400, 3831);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (772425, 'LightSalmon', 33071, 1286112, 4744);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (784784, 'Red', 28063, 4360321, 1852);
 
 #
-# TABLE STRUCTURE FOR: Rocket
+# TABLE STRUCTURE FOR: Officer
 #
 
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (14286, '#003399', '55855.75', 8838);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19085, '#002288', '55411.38', 4865);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19383, '#0099ee', '35060.5', 8026);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (20711, '#00ee00', '88856.7', 4488);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (24345, '#0044cc', '101269.52', 6019);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (26815, '#002266', '77160.55', 3203);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (42061, '#000066', '102901.88', 7229);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (45441, '#008800', '107631.13', 8881);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (46574, '#0077dd', '24802.78', 5845);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (52368, '#00aaaa', '101597.75', 6817);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (59199, '#008855', '20611.65', 3047);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (78688, '#00bb77', '113972.29', 9515);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (85597, '#00ffff', '24295.5', 3384);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (86690, '#00bbff', '110419.72', 8427);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (102821, '#00ffdd', '20346.85', 8097);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (106571, '#009900', '55702.56', 2245);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (111131, '#007722', '38120.59', 8701);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (115938, '#006688', '28057.07', 8091);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (118425, '#00aa66', '33075.24', 8461);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (123330, '#0033dd', '9026.89', 8771);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (133474, '#0033bb', '129469.89', 4744);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (153985, '#00ee88', '67188.67', 6709);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (157369, '#00bbff', '108038.54', 1121);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (163077, '#00bb44', '98431.69', 5840);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (164398, '#0099cc', '31596.87', 7783);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (166678, '#00bb11', '33460.74', 3290);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (172905, '#005544', '83570.81', 9116);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (176713, '#00ffee', '55074.12', 4973);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (178660, '#000022', '91612.22', 9851);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (179299, '#00cc99', '125868.53', 8359);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (187983, '#00ffcc', '65045.13', 3901);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (188318, '#00bb33', '3002.11', 5479);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (190044, '#0022bb', '94925.02', 7431);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (200283, '#0033cc', '2289.98', 4102);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (215064, '#000000', '83275.26', 4230);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (217220, '#0088dd', '53665.72', 8055);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (223942, '#00dd55', '104486.3', 5291);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (225193, '#0077dd', '89455.79', 5504);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (225268, '#00dd33', '119128.65', 3631);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (227291, '#00aa44', '34803.41', 1994);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (228521, '#00aa44', '22543.22', 8416);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (228723, '#00aa11', '102976.78', 3181);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (229352, '#0066dd', '31235.89', 3397);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (231126, '#00cc55', '32869.16', 6583);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (241241, '#000066', '15703.98', 9717);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (242970, '#00ddff', '1816.13', 8457);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (244260, '#00aa44', '83210.72', 1285);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (252122, '#00cccc', '136639.31', 1559);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (261908, '#001199', '115369.49', 1234);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (269975, '#00ccff', '78367.29', 1914);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (272777, '#0088dd', '134808.52', 5740);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (273890, '#008877', '35528.07', 7321);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (289661, '#002299', '129521.12', 5391);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (292877, '#00aa00', '112846.28', 4644);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (296339, '#00aacc', '78773.16', 5693);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (297866, '#0000cc', '74705.54', 4629);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (309031, '#00cc55', '91755.74', 5701);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (310251, '#0099ff', '120399.35', 4350);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (311027, '#00ff33', '91162.18', 7372);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (313789, '#0099ff', '43628.87', 2944);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (314448, '#00ee77', '48362.6', 3890);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (319786, '#002200', '115086.46', 6524);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (321421, '#0000bb', '20364.27', 8239);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (322874, '#00aabb', '122826.41', 1852);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (324415, '#000033', '20494.44', 1413);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (326153, '#0088ff', '76688.13', 4223);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (326344, '#00cc22', '120977.06', 8371);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (327407, '#00ccdd', '29587.47', 7899);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (328396, '#0088aa', '63199.75', 7467);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (344307, '#0066bb', '22903.32', 1598);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (350423, '#000088', '109196.96', 1624);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (361937, '#001122', '79433.16', 1323);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (363153, '#00ee66', '131507.66', 5306);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (368808, '#0033dd', '63727.09', 5911);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (377666, '#002200', '122758.8', 5510);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (378632, '#006644', '134313.99', 7380);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (379285, '#00eeee', '50419.49', 5128);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (380268, '#002299', '122000.13', 7907);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (384522, '#00ff22', '23205.78', 8260);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (395514, '#00bb44', '125117.92', 1762);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (410392, '#00eeff', '89059.45', 2420);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (413077, '#002288', '121843.32', 1922);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (417581, '#00ff00', '73876.84', 7573);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (417934, '#0022bb', '130473.24', 9596);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (421538, '#0000ee', '1998.53', 8261);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (425652, '#0011ee', '5081.39', 9329);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (439329, '#00ee66', '99288.8', 2815);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (439673, '#00cc22', '38766.92', 3831);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (440380, '#0022bb', '31926.31', 1291);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (441863, '#004455', '9842.76', 6803);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (446123, '#006600', '88694.27', 9271);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (452161, '#007711', '135855.4', 4758);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (454526, '#009933', '43831.62', 4038);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (457639, '#005577', '37511.92', 4084);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (471678, '#004466', '74168.99', 5527);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (474873, '#00aa44', '59874.91', 1533);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (478397, '#00aabb', '105542.06', 9298);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (480724, '#0000ff', '25723.39', 2643);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (481631, '#00eeff', '34758.97', 9574);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (483001, '#00dd33', '49647.24', 1974);
-
+INSERT INTO `Officer` (`AstroID`) VALUES (138681);
+INSERT INTO `Officer` (`AstroID`) VALUES (141685);
+INSERT INTO `Officer` (`AstroID`) VALUES (143112);
+INSERT INTO `Officer` (`AstroID`) VALUES (147234);
+INSERT INTO `Officer` (`AstroID`) VALUES (149625);
+INSERT INTO `Officer` (`AstroID`) VALUES (199971);
+INSERT INTO `Officer` (`AstroID`) VALUES (202049);
+INSERT INTO `Officer` (`AstroID`) VALUES (202815);
+INSERT INTO `Officer` (`AstroID`) VALUES (205504);
+INSERT INTO `Officer` (`AstroID`) VALUES (243451);
+INSERT INTO `Officer` (`AstroID`) VALUES (245268);
+INSERT INTO `Officer` (`AstroID`) VALUES (246816);
+INSERT INTO `Officer` (`AstroID`) VALUES (247704);
+INSERT INTO `Officer` (`AstroID`) VALUES (264225);
+INSERT INTO `Officer` (`AstroID`) VALUES (265847);
+INSERT INTO `Officer` (`AstroID`) VALUES (266377);
+INSERT INTO `Officer` (`AstroID`) VALUES (270615);
+INSERT INTO `Officer` (`AstroID`) VALUES (275638);
+INSERT INTO `Officer` (`AstroID`) VALUES (282564);
+INSERT INTO `Officer` (`AstroID`) VALUES (284384);
+INSERT INTO `Officer` (`AstroID`) VALUES (285832);
 
 #
 # TABLE STRUCTURE FOR: ShipmentLaunchpadSlot
 #
 
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (315398, 162431, 287026, '71162957.65', 138681, '046 Jasmin Mountains\nNew Maurineside, FL 29234', 320, '2013-08-29', '1979-09-18', '0', '12');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (318443, 261313, 532702, '78864075.57', 141685, '69634 Katarina Greens\nMatteoside, OR 02799-3890', 186, '2006-09-08', '1995-02-20', '18', '7');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (325597, 381732, 759810, '16841433.95', 143112, '94974 Helena Mount\nLake Boydstad, OK 34789-5931', 314, '1995-12-03', '2012-07-27', '7', '9');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (330539, 177474, 291650, '52240323.97', 147234, '435 Lesch Pines\nSouth Clementinefort, NY 12021-3742', 191, '1995-04-27', '2016-12-31', '6', '22');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (344060, 122618, 196106, '43155477.47', 149625, '0652 Cicero Park\nAracelyville, IL 07060-9166', 91, '1981-08-28', '2000-05-18', '19', '3');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (355664, 182807, 301559, '80616649.12', 199971, '5800 Kreiger Heights Suite 278\nStokesside, MT 35421-7312', 81, '1991-06-22', '1997-04-28', '17', '12');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (362089, 247970, 477536, '62431380.66', 202049, '8073 White Crossing\nEugeneberg, NH 70330-3444', 112, '1989-07-07', '1982-03-25', '10', '6');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (363674, 326127, 641970, '32782264.73', 202815, '706 Beer Unions Apt. 242\nNew Allenland, OH 43969-1574', 391, '2000-04-13', '2015-07-14', '11', '14');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (368576, 246878, 460600, '22498689.52', 205504, '86719 Winifred Plaza\nPort Giovannistad, GA 13757-1219', 141, '1986-07-07', '1992-12-02', '5', '9');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (370659, 266689, 577229, '76458979.99', 243451, '5418 Jocelyn Via Apt. 382\nNorth Eltastad, WY 94964', 202, '2015-02-02', '2013-01-15', '0', '5');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (373806, 212808, 356278, '43441923.91', 245268, '419 Kuvalis Mount\nNew Mandy, WA 83080', 107, '2011-08-16', '1978-07-04', '12', '7');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (375861, 355129, 691164, '46551069.34', 246816, '9861 Friesen Centers\nPort Christian, WY 98809', 99, '1981-04-08', '2001-08-26', '12', '12');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (383268, 342497, 664481, '57037754.3', 247704, '88008 Nitzsche Knolls Suite 022\nJaniyaview, GA 49805', 307, '2004-12-15', '1977-10-05', '22', '14');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (385088, 388417, 763503, '61032156.63', 264225, '346 Vallie Village\nPort Isadoreland, WA 75996-4421', 100, '1982-07-05', '1988-02-19', '4', '6');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (393314, 390445, 772425, '14135033.3', 265847, '7674 Schuppe Dale Suite 119\nHeathcoteton, DC 68919-9629', 236, '2017-03-02', '1983-12-30', '9', '0');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (396475, 133780, 215018, '75909429.63', 266377, '0828 Ebony Roads Suite 616\nEast Colt, NH 12452', 239, '2005-09-13', '1982-01-28', '6', '6');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (400921, 203355, 329981, '47021675.31', 270615, '9701 Jessika Extension Apt. 186\nLake Verdieville, DC 55937', 171, '1973-03-03', '1981-06-27', '21', '15');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (402818, 333427, 655718, '23735640.32', 275638, '1729 Krajcik Village\nEast Holdenstad, MD 27425', 289, '1973-12-11', '2005-10-31', '23', '17');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (403015, 215385, 380923, '87048865.44', 282564, '22034 Heaney Mission Apt. 077\nWest Reganborough, DE 25121', 138, '2006-12-27', '1997-12-31', '19', '13');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (416190, 214158, 358634, '20595108.16', 284384, '13644 Strosin Place\nSouth Hailee, DC 95511-6450', 231, '1980-06-11', '1991-09-12', '14', '5');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (426979, 266257, 575384, '79249385.14', 285832, '653 Cynthia Shoals Apt. 048\nNienowberg, SD 06376-2018', 40, '1985-05-04', '2005-06-26', '4', '0');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (315398, 162431, 287026, '71162957.65', 138681, '046 Jasmin Mountains\nNew Maurineside, FL 29234', 320, '2013-08-29', '1979-09-18', '00:59:07', '14:35:25');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (318443, 261313, 532702, '78864075.57', 141685, '69634 Katarina Greens\nMatteoside, OR 02799-3890', 186, '2006-09-08', '1995-02-20', '00:05:26', '16:32:16');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (325597, 381732, 759810, '16841433.95', 143112, '94974 Helena Mount\nLake Boydstad, OK 34789-5931', 314, '1995-12-03', '2012-07-27', '16:01:53', '14:00:40');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (330539, 177474, 291650, '52240323.97', 147234, '435 Lesch Pines\nSouth Clementinefort, NY 12021-3742', 191, '1995-04-27', '2016-12-31', '16:01:53', '01:53:26');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (344060, 122618, 196106, '43155477.47', 149625, '0652 Cicero Park\nAracelyville, IL 07060-9166', 91, '1981-08-28', '2000-05-18', '09:23:17', '14:22:30');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (355664, 182807, 301559, '80616649.12', 199971, '5800 Kreiger Heights Suite 278\nStokesside, MT 35421-7312', 81, '1991-06-22', '1997-04-28', '04:27:55', '13:15:10');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (362089, 247970, 477536, '62431380.66', 202049, '8073 White Crossing\nEugeneberg, NH 70330-3444', 112, '1989-07-07', '1982-03-25', '23:51:37', '00:18:51');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (363674, 326127, 641970, '32782264.73', 202815, '706 Beer Unions Apt. 242\nNew Allenland, OH 43969-1574', 391, '2000-04-13', '2015-07-14', '22:16:56', '16:49:12');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (368576, 246878, 460600, '22498689.52', 205504, '86719 Winifred Plaza\nPort Giovannistad, GA 13757-1219', 141, '1986-07-07', '1992-12-02', '14:28:05', '13:48:36');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (370659, 266689, 577229, '76458979.99', 243451, '5418 Jocelyn Via Apt. 382\nNorth Eltastad, WY 94964', 202, '2015-02-02', '2013-01-15', '03:03:25', '10:46:56');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (373806, 212808, 356278, '43441923.91', 245268, '419 Kuvalis Mount\nNew Mandy, WA 83080', 107, '2011-08-16', '1978-07-04', '19:32:10', '23:48:32');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (375861, 355129, 691164, '46551069.34', 246816, '9861 Friesen Centers\nPort Christian, WY 98809', 99, '1981-04-08', '2001-08-26', '15:21:56', '19:19:04');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (383268, 342497, 664481, '57037754.3', 247704, '88008 Nitzsche Knolls Suite 022\nJaniyaview, GA 49805', 307, '2004-12-15', '1977-10-05', '10:26:27', '13:43:46');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (385088, 388417, 763503, '61032156.63', 264225, '346 Vallie Village\nPort Isadoreland, WA 75996-4421', 100, '1982-07-05', '1988-02-19', '18:38:49', '14:56:13');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (393314, 390445, 772425, '14135033.3', 265847, '7674 Schuppe Dale Suite 119\nHeathcoteton, DC 68919-9629', 236, '2017-03-02', '1983-12-30', '17:33:57', '20:16:13');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (396475, 133780, 215018, '75909429.63', 266377, '0828 Ebony Roads Suite 616\nEast Colt, NH 12452', 239, '2005-09-13', '1982-01-28', '09:33:06', '22:27:35');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (400921, 203355, 329981, '47021675.31', 270615, '9701 Jessika Extension Apt. 186\nLake Verdieville, DC 55937', 171, '1973-03-03', '1981-06-27', '12:48:17', '01:58:41');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (402818, 333427, 655718, '23735640.32', 275638, '1729 Krajcik Village\nEast Holdenstad, MD 27425', 289, '1973-12-11', '2005-10-31', '07:49:37', '08:58:33');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (403015, 215385, 380923, '87048865.44', 282564, '22034 Heaney Mission Apt. 077\nWest Reganborough, DE 25121', 138, '2006-12-27', '1997-12-31', '02:04:20', '06:15:59');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (416190, 214158, 358634, '20595108.16', 284384, '13644 Strosin Place\nSouth Hailee, DC 95511-6450', 231, '1980-06-11', '1991-09-12', '08:54:50', '20:33:53');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (426979, 266257, 575384, '79249385.14', 285832, '653 Cynthia Shoals Apt. 048\nNienowberg, SD 06376-2018', 40, '1985-05-04', '2005-06-26', '12:35:04', '14:28:34');
+
+#
+# TABLE STRUCTURE FOR: CrewShipment
+#
+
+
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (104031, 315398);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (106504, 318443);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (108918, 325597);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (109577, 330539);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (112379, 344060);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (113747, 355664);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (116958, 362089);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (117034, 363674);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (117119, 368576);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (122263, 370659);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (122800, 373806);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (125322, 375861);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (131029, 383268);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (131444, 385088);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (132664, 393314);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (133957, 396475);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (138420, 400921);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (138424, 402818);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (138681, 403015);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (141685, 416190);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (141874, 426979);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (143112, 315398); 
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (147234, 318443);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (149625, 325597);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (151629, 330539);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (152500, 344060);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (152612, 355664);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (154476, 362089);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (155790, 363674);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (156758, 368576);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (160902, 370659);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (163100, 373806);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (165415, 375861);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (165734, 383268);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (171643, 385088);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (171672, 393314);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (173383, 396475);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (176832, 400921);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (178836, 402818);
+INSERT INTO `CrewShipment` (`AstroID`, `InvoiceNum`) VALUES (180963, 403015);
+
+#
+# TABLE STRUCTURE FOR: Passenger
+#
+
+
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (104031, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (106504, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (108918, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (109577, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (112379, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (113747, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (116958, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (117034, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (117119, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (122263, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (122800, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (125322, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (131029, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (131444, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (132664, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (133957, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (138420, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (138424, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (138681, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (141685, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (141874, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (143112, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (147234, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (149625, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (151629, 'NO');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (152500, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (152612, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (154476, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (155790, 'YES');
+INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (156758, 'YES');
+
+#
+# TABLE STRUCTURE FOR: CarryPassengerShipment
+#
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (104031, 315398);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (106504, 318443);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (108918, 325597);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (109577, 330539);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (112379, 344060);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (113747, 355664);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (116958, 362089);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (117034, 363674);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (117119, 368576);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (122263, 370659);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (122800, 373806);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (125322, 375861);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (131029, 383268);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (131444, 385088);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (132664, 393314);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (133957, 396475);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (138420, 400921);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (138424, 402818);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (138681, 403015);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (141685, 416190);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (141874, 426979);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (143112, 426979);#
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (147234, 416190);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (149625, 403015);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (151629, 402818);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (152500, 400921);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (152612, 396475);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (154476, 393314);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (155790, 385088);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (156758, 383268);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (160902, 375861);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (163100, 373806);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (165415, 370659);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (165734, 368576);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (171643, 363674);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (171672, 362089);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (173383, 355664);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (176832, 344060);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (178836, 330539);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (180963, 325597);
+
+
+
 /*INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (428270, 148859, 245922, '80544685.23', 143112, '19624 Larissa Road Suite 347\nGuiseppeport, CT 66754-9266', 251, '2004-08-26', '2017-07-19', '18', '12');
 INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (430809, 249984, 492103, '16365184.15', 229877, '527 Anibal Isle\nReichelland, DE 90610', 91, '1985-04-01', '1994-01-25', '1', '23');
 INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (433223, 182575, 299891, '33344252.57', 160902, '60280 Deontae View Apt. 933\nMadgeville, NJ 32191-7567', 208, '1995-03-05', '1972-10-07', '20', '14');
