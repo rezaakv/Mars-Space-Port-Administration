@@ -24,8 +24,7 @@ CREATE TABLE IF NOT EXISTS Rocket(
     Capacity REAL,
     CompanyID INT,
     PRIMARY KEY (RocketID),
-	FOREIGN KEY (CompanyID) REFERENCES Company (CompanyID)
-    -- ON DELETE SET NULL
+    FOREIGN KEY (CompanyID) REFERENCES Company (CompanyID)
     );
 
 CREATE TABLE IF NOT EXISTS Reservation(
@@ -46,7 +45,8 @@ CREATE TABLE IF NOT EXISTS Cargo(
     CompanyID INT,
     PRIMARY KEY (CargoID),
     FOREIGN KEY (CompanyID) REFERENCES Company (CompanyID)
-    -- ON DELETE SET NULL
+     ON DELETE SET NULL
+     ON UPDATE SET NULL
     );
 
 
@@ -56,7 +56,6 @@ CREATE TABLE IF NOT EXISTS Officer(
     FOREIGN KEY (AstroID) REFERENCES Astronaut (AstroID)
     ON DELETE CASCADE
     ON UPDATE CASCADE
-    -- ON DELETE CASCADE
     );
 
 CREATE TABLE IF NOT EXISTS ShipmentLaunchpadSlot(
@@ -65,25 +64,21 @@ CREATE TABLE IF NOT EXISTS ShipmentLaunchpadSlot(
     CargoID INT,
     Cost REAL,
     AstroID  INT,
-    Location VARCHAR(100),
-    PortNum INT,
+    Location VARCHAR(100) NOT NULL,
+    PortNum INT NOT NULL,
     StartDate DATE NOT NULL,
     EndDate DATE NOT NULL,
     StartTime REAL NOT NULL,
     EndTime REAL NOT NULL,
     PRIMARY KEY (InvoiceNum),
     CONSTRAINT LaunchpadSlot UNIQUE (Location, PortNum, StartDate, EndDate, StartTime, EndTime),
-    FOREIGN KEY (ReserveID) REFERENCES Reservation (ReserveID)
-    -- ON DELETE CASCADE
-    ,
-    FOREIGN KEY (CargoID) REFERENCES Cargo (CargoID),
+    FOREIGN KEY (ReserveID) REFERENCES Reservation (ReserveID),
+    FOREIGN KEY (CargoID) REFERENCES Cargo (CargoID)
+    ON DELETE SET NULL
+    ON UPDATE SET NULL,
     FOREIGN KEY (AstroID) REFERENCES Officer (AstroID)
     ON DELETE SET NULL
-    ON UPDATE CASCADE
--- ON UPDATE CASCADE
--- FOREIGN KEY (Port#, Location, StartDate, EndDate, StartTime, EndTime) REFERENCES LaunchpadSlot
--- ON DELETE NO ACTION
--- ON UPDATE NO ACTION,
+    ON UPDATE SET NULL
     );
 
 
@@ -95,7 +90,7 @@ CREATE TABLE IF NOT EXISTS CrewShipment(
     ON DELETE CASCADE
     ON UPDATE CASCADE,
     FOREIGN KEY (InvoiceNum) REFERENCES ShipmentLaunchpadSlot (InvoiceNum)
-    -- ON DELETE CASCADE
+
     );
 
 CREATE TABLE IF NOT EXISTS Passenger(
@@ -105,7 +100,7 @@ CREATE TABLE IF NOT EXISTS Passenger(
     FOREIGN KEY (AstroID) REFERENCES Astronaut (AstroID)
     ON DELETE CASCADE
     ON UPDATE CASCADE
-    -- ON DELETE CASCADE
+
     );
 
 CREATE TABLE IF NOT EXISTS CarryPassengerShipment(
@@ -116,7 +111,7 @@ CREATE TABLE IF NOT EXISTS CarryPassengerShipment(
     ON DELETE CASCADE
     ON UPDATE CASCADE,
     FOREIGN KEY (InvoiceNum) REFERENCES ShipmentLaunchpadSlot (InvoiceNum)
-    -- ON DELETE CASCADE
+
     );
 
 commit;
