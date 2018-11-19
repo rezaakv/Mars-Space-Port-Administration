@@ -22,17 +22,16 @@
 			<div class="panel panel-transparent">
 				<div class="panel-heading">
 					Make Reservation
-				</div>
-
-				<div class="panel-body">
 					<form id="reservation" method="post" action="makeReservation">
-						<input type="date" name="reqDate" id="reqDate" />
-						<input type="text" name="destination" id="destination" placeholder="Destination" />
+						Request Date<input type="text" name="reqDate" id="reqDate" placeholder="yyyy-mm-dd"/>
+						Destination<input type="text" name="destination" id="destination" placeholder="Destination" />
 						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
 						<input type="text" pattern="[0-9]{0,100}" name="RocketID" id="RocketID" placeholder="RocketID" />
 						<input type="submit" />
 					</form>
 				</div>
+
+			</div>
 			
 
 		<!-- Footer

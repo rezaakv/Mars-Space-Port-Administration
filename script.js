@@ -219,6 +219,31 @@ app.post('/', function (req, res) {
 				});
 			});
 		});
+
+		
+		// Reservation
+		app.post('/reservation', function (req, res){
+			//	console.log('got request');
+			var invoiceNum = req.body.invoice;
+			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Reservation";
+			} else {
+				sql = "select *  from ShipmentLaunchpadSlot where ";
+				sql += "InvoiceNum = " + invoiceNum;
+				sql = sql.slice(0, -5);
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) { 
+                	let result = {};
+                }
+				console.log(Object.keys(result[0]));
+				res.render('reservation', 
+				{
+					table: result,
+				});
+			});
+		});
     }
   });
 })
