@@ -198,9 +198,9 @@ app.post('/', function (req, res) {
 			// if ((companyID == undefined) || (companyID == "")) {
 			// 	sql = "select * from Company";
 			// } else {
-				sql = "select cm.CompanyID, cm.Name, Sum(value) from Company cm, Cargo c where ";
+				sql = "select cm.CompanyID, cm.Name, Sum(value) AS SumOfValue from Company cm, Cargo c where ";
 				sql += "cm.CompanyID = c.CompanyID";
-				sql += " group by CompanyID ";
+				sql += " group by CompanyID Order by SumOfValue";
 			// }
 			console.log(sql);
 			con.query(sql, function (err, result) {
