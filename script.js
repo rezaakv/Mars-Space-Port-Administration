@@ -175,17 +175,17 @@ app.post('/', function (req, res) {
 			});
 		});
 
-		app.post('/rocketByCapacity', function(req, res){
+		app.post('/rocketWeight', function(req, res){
 			var capacity = req.body.capacity;
-			var name = req.body.Name;
+			// console.log(capacity);
+
 			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
 				sql = "select * from Rocket";
 			} else {
 				sql = "select * from Rocket where ";
 				if (capacity != "") sql += "Capacity > "+ capacity;
-				sql = sql.slice(0, -5);
 			}
-			//console.log(sql);
+			// console.log(sql);
 			con.query(sql, function (err, result) {
                 if (err) { 
                 	let result = {};

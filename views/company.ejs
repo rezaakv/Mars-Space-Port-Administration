@@ -23,7 +23,7 @@
 			document.getElementById("companyValue").style.display = "flex";
 		} else if (userInput === "Find Company Rockets") {
 			document.getElementById("companyRocket").style.display = "flex";
-		} else if (userInput === "Find Rockets by Max Weight") {
+		} else if (userInput === "Find Rockets by Min Weight") {
 			document.getElementById("rocketWeight").style.display = "flex";
 		}
 	}
@@ -62,7 +62,7 @@
 					   			<option name="Find Crew" value="Find Crew">Find Crew</option>
 					   			<option name="Find Cargo Value" value="Find Cargo Value">Find Cargo Value</option>
 					   			<option name="Find Company Rockets" value="Find Company Rockets">Find Company Rockets</option>
-					   			<option name="Find Rockets by Max Weight" value="Find Rockets by Max Weight">Find Rockets by Max Weight</option>
+					   			<option name="Find Rockets by Min Weight" value="Find Rockets by Min Weight">Find Rockets by Min Capacity</option>
 				   			</optgroup>
 			  			</select>
 					</div>
@@ -94,7 +94,7 @@
 
 					<!-- Rocket Weight -->
 					<form id="rocketWeight" method="post" action="rocketWeight" style="display: none">
-						<input type="text" name="weight" id="weight" placeholder="Min Weight" />
+						<input type="text" name="capacity" id="capacity" placeholder="Min Capacity" />
 						<input type="submit" />
 					</form>
 
