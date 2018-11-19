@@ -162,11 +162,11 @@ app.post('/', function (req, res) {
 			//	console.log('got request');
 			var companyID = req.body.companyID;
 			if ((companyID == undefined) || (companyID == "")) {
-				sql = "select * from Crew, Astronaut";
+				sql = "select * from Crew c, Astronaut a where c.AstroID = a.AstroID";
 			} else {
 				sql = "select * from Crew c, Astronaut a where ";
-				sql += "c.AstroID = a.AstroID, "
-				sql += "CompanyID = " + companyID;
+				sql += "c.AstroID = a.AstroID and "
+				sql += "c.CompanyID = " + companyID;
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
