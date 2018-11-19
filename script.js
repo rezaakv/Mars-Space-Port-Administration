@@ -240,7 +240,6 @@ app.post('/', function (req, res) {
 			} else {
 				sql = "select *  from ShipmentLaunchpadSlot where ";
 				sql += "InvoiceNum = " + invoiceNum;
-				sql = sql.slice(0, -5);
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
@@ -255,6 +254,28 @@ app.post('/', function (req, res) {
 			});
 		});
 
+		app.post('/reqAssistance', function (req, res){
+			//	console.log('got request');
+			var invoiceNum = req.body.InvoiceNum;
+			console.log(invoiceNum);
+			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from ShipmentLaunchpadSlot";
+			} else {
+				sql = "select p.AstroID, p.requiresAssistance from ShipmentLaunchpadSlot s, CarryPassengerShipment c, Passenger p where ";
+				sql += "s.InvoiceNum = c.InvoiceNum and c.AstroID = p.AstroID and s.InvoiceNum = " + invoiceNum  + ";";
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) { 
+                	let result = {};
+                }
+				console.log(Object.keys(result[0]));
+				res.render('shipment', 
+				{
+					table: result,
+				});
+			});
+		});
 		
 		// Reservation
 		app.post('/reservation', function (req, res){
