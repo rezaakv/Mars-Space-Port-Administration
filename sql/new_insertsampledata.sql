@@ -217,15 +217,23 @@ INSERT INTO `Company` (`CompanyID`, `Name`) VALUES (9851, 'Maggio Inc');
 #
 
 
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (104031, 1121);
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (104031, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (108918, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (109577, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (112379, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (113747, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (116958, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (117034, 1234);
+
+INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (117119, 1234);
+
 INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (106504, 1234);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (108918, 1285);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (109577, 1291);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (112379, 1323);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (113747, 1413);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (116958, 1533);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (117034, 1559);
-INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (117119, 1598);
 INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (122263, 1624);
 INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (122800, 1762);
 INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (125322, 1852);
@@ -262,11 +270,11 @@ INSERT INTO `Crew` (`AstroID`, `CompanyID`) VALUES (180963, 4644);
 # TABLE STRUCTURE FOR: Rocket
 #
 
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (14286, '#003399', '55855.75', 8838);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (14286, '#003399', '55855.75', 4865);
 INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19085, '#002288', '55411.38', 4865);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19383, '#0099ee', '35060.5', 8026);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (20711, '#00ee00', '88856.7', 4488);
-INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (24345, '#0044cc', '101269.52', 6019);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (19383, '#0099ee', '35060.5', 4865);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (20711, '#00ee00', '88856.7', 4865);
+INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (24345, '#0044cc', '101269.52', 4865);
 INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (26815, '#002266', '77160.55', 3203);
 INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (42061, '#000066', '102901.88', 7229);
 INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (45441, '#008800', '107631.13', 8881);
@@ -367,27 +375,27 @@ INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (4830
 # TABLE STRUCTURE FOR: Reservation
 #
 
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103436, '2017-02-20', 'Antigua and Barbuda', 9329, 471678);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (104568, '2008-07-31', 'Moldova', 8457, 425652);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (105576, '1992-07-24', 'Germany', 7907, 368808);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103436, '2017-02-20', 'MarsCity', 9329, 471678);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (104568, '2008-07-31', 'MarsCity', 8457, 425652);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (105576, '1992-07-24', 'MarsCity', 7907, 368808);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (108400, '2008-01-25', 'Ghana', 3290, 164398);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (111110, '1972-04-08', 'Algeria', 5479, 261908);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (114790, '1995-05-23', 'Gabon', 3384, 166678);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (117979, '1971-11-23', 'Slovakia (Slovak Republic)', 8261, 410392);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (121557, '1997-11-24', 'New Caledonia', 8701, 439673);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (122618, '1979-09-28', 'Sweden', 3901, 187983);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (121557, '1997-11-24', 'MarsCity', 8701, 439673);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (122618, '1979-09-28', 'MarsCity', 3901, 187983);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (126582, '1974-12-10', 'Paraguay', 2815, 123330);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (127819, '1986-05-19', 'Svalbard & Jan Mayen Islands', 5291, 242970);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (129125, '1974-01-04', 'Andorra', 4973, 231126);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (129125, '1974-01-04', 'MarsCity', 4973, 231126);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (133780, '2000-11-12', 'Bolivia', 3831, 178660);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (136248, '2014-10-14', 'Guyana', 4865, 229352);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (138056, '1986-05-30', 'Turks and Caicos Islands', 4102, 200283);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (139757, '2016-09-16', 'Spain', 4084, 190044);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (141121, '1983-02-12', 'Kenya', 5911, 310251);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (141121, '1983-02-12', 'MarsCity', 5911, 310251);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (141559, '2018-01-17', 'Hungary', 1559, 45441);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (144670, '2007-10-16', 'Greece', 1323, 24345);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (144670, '2007-10-16', 'MarsCity', 1323, 24345);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (145719, '1986-12-15', 'Samoa', 5740, 296339);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (146607, '1985-12-22', 'Finland', 3047, 153985);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (146607, '1985-12-22', 'MarsCity', 3047, 153985);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (148859, '2015-04-14', 'Croatia', 5128, 241241);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (149689, '1988-08-31', 'Iraq', 3397, 172905);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (155166, '2018-01-17', 'Guyana', 6803, 321421);
@@ -395,7 +403,7 @@ INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `Company
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (158022, '1997-11-27', 'Cocos (Keeling) Islands', 4644, 227291);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (158216, '2012-03-14', 'India', 8371, 417581);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (162431, '1981-01-25', 'Malawi', 1121, 14286);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (177474, '2017-05-16', 'French Polynesia', 1852, 78688);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (177474, '2017-05-16', 'MarsCity', 1852, 78688);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (180741, '2015-01-26', 'Panama', 5510, 272777);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (182575, '2000-07-01', 'Bhutan', 7783, 361937);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (182807, '1973-02-14', 'Netherlands Antilles', 8359, 413077);
@@ -403,11 +411,11 @@ INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `Company
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (194138, '1989-11-23', 'Spain', 9717, 481631);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (198283, '2014-09-08', 'Germany', 1974, 102821);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (200084, '2014-11-05', 'Libyan Arab Jamahiriya', 5693, 289661);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (203355, '1990-10-12', 'Liberia', 8260, 395514);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (203355, '1990-10-12', 'MarsCity', 8260, 395514);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (207429, '1978-03-07', 'Antigua and Barbuda', 6709, 319786);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (212145, '2017-09-26', 'Aruba', 3631, 176713);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (212808, '1970-08-23', 'Netherlands Antilles', 7467, 344307);
-INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (214158, '2002-03-27', 'Haiti', 9574, 478397);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (214158, '2002-03-27', 'MarsCity', 9574, 478397);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (214376, '2005-04-06', 'Denmark', 7321, 326153);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (215385, '2005-02-25', 'Saint Pierre and Miquelon', 7372, 326344);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (215695, '2014-03-02', 'Albania', 5527, 273890);
@@ -472,6 +480,10 @@ INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `Company
 # TABLE STRUCTURE FOR: Cargo
 #
 
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (1102078, 'MediumAquaMarine', 79943, 572976, 1533);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (2102078, 'MediumAquaMarine', 79943, 572976, 1533);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (3102078, 'MediumAquaMarine', 79943, 572976, 1533);
+INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (4102078, 'MediumAquaMarine', 79943, 572976, 1533);
 
 INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (102078, 'MediumAquaMarine', 79943, 572976, 1533);
 INSERT INTO `Cargo` (`CargoID`, `CargoType`, `Weight`, `Value`, `CompanyID`) VALUES (120144, 'DarkBlue', 66253, 1660311, 5291);
@@ -604,12 +616,12 @@ INSERT INTO `Officer` (`AstroID`) VALUES (285832);
 # TABLE STRUCTURE FOR: ShipmentLaunchpadSlot
 #
 
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (315398, 162431, 287026, '71162957.65', 138681, '046 Jasmin Mountains\nNew Maurineside, FL 29234', 320, '2013-08-29', '1979-09-18', '00:59:07', '14:35:25');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (318443, 261313, 532702, '78864075.57', 141685, '69634 Katarina Greens\nMatteoside, OR 02799-3890', 186, '2006-09-08', '1995-02-20', '00:05:26', '16:32:16');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (325597, 381732, 759810, '16841433.95', 143112, '94974 Helena Mount\nLake Boydstad, OK 34789-5931', 314, '1995-12-03', '2012-07-27', '16:01:53', '14:00:40');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (330539, 177474, 291650, '52240323.97', 147234, '435 Lesch Pines\nSouth Clementinefort, NY 12021-3742', 191, '1995-04-27', '2016-12-31', '16:01:53', '01:53:26');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (344060, 122618, 196106, '43155477.47', 149625, '0652 Cicero Park\nAracelyville, IL 07060-9166', 91, '1981-08-28', '2000-05-18', '09:23:17', '14:22:30');
-INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (355664, 182807, 301559, '80616649.12', 199971, '5800 Kreiger Heights Suite 278\nStokesside, MT 35421-7312', 81, '1991-06-22', '1997-04-28', '04:27:55', '13:15:10');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (315398, 162431, 287026, '71162957.65', 138681, 'MarsCity', 320, '2013-08-29', '1979-09-18', '00:59:07', '14:35:25');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (318443, 261313, 532702, '78864075.57', 141685, 'MarsCity', 186, '2006-09-08', '1995-02-20', '00:05:26', '16:32:16');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (325597, 381732, 759810, '16841433.95', 143112, 'MarsCity', 314, '1995-12-03', '2012-07-27', '16:01:53', '14:00:40');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (330539, 177474, 291650, '52240323.97', 147234, 'Vancouver', 191, '1995-04-27', '2016-12-31', '16:01:53', '01:53:26');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (344060, 122618, 196106, '43155477.47', 149625, 'Vancouver', 91, '1981-08-28', '2000-05-18', '09:23:17', '14:22:30');
+INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (355664, 182807, 301559, '80616649.12', 199971, 'Vancouver', 81, '1991-06-22', '1997-04-28', '04:27:55', '13:15:10');
 INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (362089, 247970, 477536, '62431380.66', 202049, '8073 White Crossing\nEugeneberg, NH 70330-3444', 112, '1989-07-07', '1982-03-25', '23:51:37', '00:18:51');
 INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (363674, 326127, 641970, '32782264.73', 202815, '706 Beer Unions Apt. 242\nNew Allenland, OH 43969-1574', 391, '2000-04-13', '2015-07-14', '22:16:56', '16:49:12');
 INSERT INTO `ShipmentLaunchpadSlot` (`InvoiceNum`, `ReserveID`, `CargoID`, `Cost`, `AstroID`, `Location`, `PortNum`, `StartDate`, `EndDate`, `StartTime`, `EndTime`) VALUES (368576, 246878, 460600, '22498689.52', 205504, '86719 Winifred Plaza\nPort Giovannistad, GA 13757-1219', 141, '1986-07-07', '1992-12-02', '14:28:05', '13:48:36');
@@ -712,10 +724,10 @@ INSERT INTO `Passenger` (`AstroID`, `RequiresAssistance`) VALUES (156758, 'YES')
 # TABLE STRUCTURE FOR: CarryPassengerShipment
 #
 INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (104031, 315398);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (106504, 318443);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (108918, 325597);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (109577, 330539);
-INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (112379, 344060);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (106504, 315398);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (108918, 315398);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (109577, 315398);
+INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (112379, 315398);
 INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (113747, 355664);
 INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (116958, 362089);
 INSERT INTO `CarryPassengerShipment` (`AstroID`, `InvoiceNum`) VALUES (117034, 363674);
