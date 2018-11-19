@@ -68,9 +68,9 @@ app.post('/', function (req, res) {
 		});
 
 		app.post('/deleteAstro', function (req, res){
-			console.log("deleteClicked")
+			// console.log("deleteClicked")
 			var astroID = req.body.AstroID;
-			console.log(astroID);
+			// console.log(astroID);
 		
 			sql = "delete from Astronaut where AstroID = "+astroID;
 			console.log(sql);
@@ -246,7 +246,7 @@ app.post('/', function (req, res) {
                 if (err) { 
                 	let result = {};
                 }
-				console.log(Object.keys(result[0]));
+				// console.log(Object.keys(result[0]));
 				res.render('shipment', 
 				{
 					table: result,
@@ -257,7 +257,7 @@ app.post('/', function (req, res) {
 		app.post('/reqAssistance', function (req, res){
 			//	console.log('got request');
 			var invoiceNum = req.body.InvoiceNum;
-			console.log(invoiceNum);
+			// console.log(invoiceNum);
 			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
 				sql = "select * from ShipmentLaunchpadSlot";
 			} else {
@@ -269,7 +269,7 @@ app.post('/', function (req, res) {
                 if (err) { 
                 	let result = {};
                 }
-				console.log(Object.keys(result[0]));
+				// console.log(Object.keys(result[0]));
 				res.render('shipment', 
 				{
 					table: result,
@@ -308,7 +308,7 @@ app.post('/', function (req, res) {
 		                	if (err) { 
 		                		let result = {};
 		                	}
-							console.log(Object.keys(result[0]));
+							// console.log(Object.keys(result[0]));
 							res.render('reservation', 
 							{
 								table: result,
@@ -320,14 +320,14 @@ app.post('/', function (req, res) {
 						con.query("select count(*) from Reservation where CompanyID=" + companyID + " AND " + "RequestedDate='" + reqDate + "' AND " + "RocketID=" + RocketID, 
 							function(err, result) {
 								if (err) throw err;
-								console.log(result)
+								// console.log(result)
 								if (result[0]['count(*)'] > 0) {
 									var err_msg = "The rocket you selected is occuppied.";
 									con.query("select * from Rocket", function (err, result) {
 					                	if (err) { 
 					                		let result = {};
 					                	}
-										console.log(Object.keys(result[0]));
+										// console.log(Object.keys(result[0]));
 										res.render('reservation', 
 										{
 											table: result,
@@ -359,7 +359,7 @@ app.post('/', function (req, res) {
 											                	let result = {};
 											                }
 											                var err_msg = "reservation success!"
-											                console.log(result);
+											                // console.log(result);
 															// console.log(Object.keys(result[0]));
 															res.render('reservation', 
 															{
