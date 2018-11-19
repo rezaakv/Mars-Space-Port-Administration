@@ -236,22 +236,43 @@ app.post('/', function (req, res) {
 			//	console.log('got request');
 			var invoiceNum = req.body.invoice;
 			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
-				sql = "select * from ShipmentLaunchpadSlot";
+				sql = "select InvoiceNum, CargoType, weight, StartDate, EndDate, StartTime, Endtime from Cargo,ShipmentLaunchpadSlot";
 			} else {
-				sql = "select *  from ShipmentLaunchpadSlot where ";
+				sql = "select InvoiceNum, CargoType, weight, StartDate, EndDate, StartTime, Endtime  from Cargo,ShipmentLaunchpadSlot where ";
 				sql += "InvoiceNum = " + invoiceNum;
-				sql = sql.slice(0, -5);
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
                 if (err) { 
                 	let result = {};
                 }
-				console.log(Object.keys(result[0]));
+				// console.log(Object.keys(result[0]));
 				res.render('shipment', 
 				{
 					table: result,
 				});
+			});
+		});
+
+		app.post('/shipmentDeparted', function (req, res){
+				console.log('got request');
+			var CID = req.body.dest;
+			console.log(CID);
+			if ((CID == undefined) || (CID == "")) { // || (name=="" && isNaN(astroID))
+				sql = "SELECT Invoicenum, Destination, Location as Arrival FROM ShipmentLaunchpadSlot S JOIN Reservation R ON S.ReserveID = R.ReserveID";
+			} else {
+				sql = "SELECT Invoicenum, Destination, Location as Arrival FROM ShipmentLaunchpadSlot S JOIN Reservation R ON S.ReserveID = R.ReserveID WHERE ";
+				sql += "Destination = '" + CID + "';";
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) { 
+                	let result = {};
+                }
+				// console.log(Object.keys(result[0]));
+				res.render('shipment', 
+				{
+					table: result,});
 			});
 		});
 

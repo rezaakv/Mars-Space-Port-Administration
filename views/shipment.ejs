@@ -55,7 +55,7 @@
 				   			<optgroup label="Select Action">
 					   			<option name="" value="0">Select Action</option>
 					  			<option name="Find Shipment" value="Find Shipment">Find Shipment</option>
-					   			<option name="Find Departed Shipment" value="Find Departed Shipment">Find Departed Shipment</option>
+					   			<option name="Find Departed Shipment" value="Find Departed Shipment">Find Confirmed Shipment to a Destination</option>
 					   			<option name="Find Passenger Require Assistance" value="Find Passenger Require Assistance">Find Passenger Require Assistance</option>
 					   			<!-- <option name="Insert Reservation" value="Insert Reservation">Insert Reservation</option> -->
 				   			</optgroup>
@@ -70,7 +70,7 @@
 				
 					<!-- Shipment Find Departed -->
 					<form id="shipmentFindDeparted" method="post" action="shipmentDeparted" style="display: none">
-						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
+						<input type="text" name="dest" id="dest" placeholder="Destination" />
 						<input type="submit" />
 					</form>
 
