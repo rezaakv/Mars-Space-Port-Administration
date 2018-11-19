@@ -175,6 +175,22 @@ app.post('/', function (req, res) {
                 res.render('company', {table: result});
 			});
 		});
+		
+		app.post('/companyRocket', function(req, res){
+			var companyID = req.body.companyID;
+			if ((companyID == undefined) || (companyID == "")) {
+				sql = "select RocketID from Rocket, Company";
+			} else {
+				sql = "select RocketID from Rocket, Company where ";
+				sql += "Company.companyID = Rocket.companyID AND Rocket.companyID =" + companyID;
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+                //console.log(table);
+                res.render('company', {table: result});
+			});
+		});
 
 		app.post('/companyValue', function (req, res){
 			//	console.log('got request');
