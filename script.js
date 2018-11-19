@@ -90,12 +90,12 @@ app.post('/', function (req, res) {
 			//	console.log('got request');
 			var astroID = req.body.AstroID;
 			var name = req.body.Name;
-			if ((astroID == undefined && name == undefined) || (astroID == "" && name == "")) { // || (name=="" && isNaN(astroID))
+			if ((astroID == undefined && name == undefined) || (astroID == "")) { // || (name=="" && isNaN(astroID))
 				sql = "select * from Astronaut";
 			} else {
 				sql = "insert into Astronaut (AstroID, Name) Values ";
-				if (astroID != "") sql += "(" + astroID + ", \"";
-				if (name != "") sql += name + "\")"
+				sql += "(" + astroID + ", \"";
+				sql += name + "\")"
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
@@ -179,9 +179,9 @@ app.post('/', function (req, res) {
 		app.post('/companyRocket', function(req, res){
 			var companyID = req.body.companyID;
 			if ((companyID == undefined) || (companyID == "")) {
-				sql = "select c.CompanyID, r.RocketID from Rocket r, Company c where r.companyID = c.companyID";
+				sql = "select * from Rocket r, Company c where r.companyID = c.companyID";
 			} else {
-				sql = "select c.CompanyID, r.RocketID from Rocket r, Company c where ";
+				sql = "select * from Rocket r, Company c where ";
 				sql += "c.companyID = r.companyID AND r.companyID =" + companyID;
 			}
 			console.log(sql);
@@ -215,9 +215,9 @@ app.post('/', function (req, res) {
 			// console.log(capacity);
 
 			if ((capacity == undefined) || (capacity == "")) { // || (name=="" && isNaN(astroID))
-				sql = "select * from Rocket";
+				sql = "select R.RocketID, R.Model, R.Capacity, C.Name As Company from Rocket R, Company C where C.CompanyID = R.CompanyID";
 			} else {
-				sql = "select * from Rocket where ";
+				sql = "select R.RocketID, R.Model, R.Capacity, C.Name As Company from Rocket R, Company C where C.CompanyID = R.CompanyID AND ";
 				if (capacity != "") sql += "Capacity > "+ capacity;
 			}
 			// console.log(sql);
@@ -236,9 +236,9 @@ app.post('/', function (req, res) {
 			//	console.log('got request');
 			var invoiceNum = req.body.invoice;
 			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
-				sql = "select InvoiceNum, CargoType, weight, StartDate, EndDate, StartTime, Endtime from Cargo,ShipmentLaunchpadSlot";
+				sql = "select S.InvoiceNum, CargoType, weight, StartDate, EndDate, StartTime, Endtime from Cargo C, ShipmentLaunchpadSlot S where S.CargoID = C.CargoID;";
 			} else {
-				sql = "select InvoiceNum, CargoType, weight, StartDate, EndDate, StartTime, Endtime  from Cargo,ShipmentLaunchpadSlot where ";
+				sql = "select S.InvoiceNum, CargoType, weight, StartDate, EndDate, StartTime, Endtime from Cargo C, ShipmentLaunchpadSlot S where S.CargoID = C.CargoID AND ";
 				sql += "InvoiceNum = " + invoiceNum;
 			}
 			console.log(sql);
@@ -259,9 +259,9 @@ app.post('/', function (req, res) {
 			var CID = req.body.dest;
 			console.log(CID);
 			if ((CID == undefined) || (CID == "")) { // || (name=="" && isNaN(astroID))
-				sql = "SELECT Invoicenum, Destination, Location as Arrival FROM ShipmentLaunchpadSlot S JOIN Reservation R ON S.ReserveID = R.ReserveID";
+				sql = "SELECT Invoicenum, Destination, Location as Departure, PortNum FROM ShipmentLaunchpadSlot S JOIN Reservation R ON S.ReserveID = R.ReserveID";
 			} else {
-				sql = "SELECT Invoicenum, Destination, Location as Arrival FROM ShipmentLaunchpadSlot S JOIN Reservation R ON S.ReserveID = R.ReserveID WHERE ";
+				sql = "SELECT Invoicenum, Destination, Location as Departure, PortNum FROM ShipmentLaunchpadSlot S JOIN Reservation R ON S.ReserveID = R.ReserveID WHERE ";
 				sql += "Destination = '" + CID + "';";
 			}
 			console.log(sql);
@@ -285,10 +285,11 @@ app.post('/', function (req, res) {
 			var invoiceNum = req.body.InvoiceNum;
 			// console.log(invoiceNum);
 			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
-				sql = "select * from ShipmentLaunchpadSlot";
+				sql = "select p.AstroID, a.Name, p.requiresAssistance, s.invoiceNum from ShipmentLaunchpadSlot s, CarryPassengerShipment c, Passenger p, Astronaut a where ";
+				sql += "s.InvoiceNum = c.InvoiceNum and c.AstroID = p.AstroID And a.AstroID = p.AstroID;";
 			} else {
-				sql = "select p.AstroID, p.requiresAssistance from ShipmentLaunchpadSlot s, CarryPassengerShipment c, Passenger p where ";
-				sql += "s.InvoiceNum = c.InvoiceNum and c.AstroID = p.AstroID and s.InvoiceNum = " + invoiceNum  + ";";
+				sql = "select p.AstroID, a.Name, p.requiresAssistance, s.invoiceNum from ShipmentLaunchpadSlot s, CarryPassengerShipment c, Passenger p, Astronaut a where ";
+				sql += "s.InvoiceNum = c.InvoiceNum and c.AstroID = p.AstroID And a.AstroID = p.AstroID And s.InvoiceNum = " + invoiceNum  + ";";
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
