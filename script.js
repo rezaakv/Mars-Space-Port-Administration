@@ -68,9 +68,9 @@ app.post('/', function (req, res) {
 		});
 
 		app.post('/deleteAstro', function (req, res){
-			console.log("deleteClicked")
+			// console.log("deleteClicked")
 			var astroID = req.body.AstroID;
-			console.log(astroID);
+			// console.log(astroID);
 		
 			sql = "delete from Astronaut where AstroID = "+astroID;
 			console.log(sql);
@@ -278,27 +278,135 @@ app.post('/', function (req, res) {
 
 		
 		// Reservation
-		app.post('/reservation', function (req, res){
+
+		app.post('/reqAssistance', function (req, res){
+
 			//	console.log('got request');
-			var invoiceNum = req.body.invoice;
+			var invoiceNum = req.body.InvoiceNum;
+			// console.log(invoiceNum);
 			if ((invoiceNum == undefined) || (invoiceNum == "")) { // || (name=="" && isNaN(astroID))
-				sql = "select * from Reservation";
+				sql = "select * from ShipmentLaunchpadSlot";
 			} else {
-				sql = "select *  from ShipmentLaunchpadSlot where ";
-				sql += "InvoiceNum = " + invoiceNum;
-				sql = sql.slice(0, -5);
+				sql = "select p.AstroID, p.requiresAssistance from ShipmentLaunchpadSlot s, CarryPassengerShipment c, Passenger p where ";
+				sql += "s.InvoiceNum = c.InvoiceNum and c.AstroID = p.AstroID and s.InvoiceNum = " + invoiceNum  + ";";
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
                 if (err) { 
                 	let result = {};
                 }
-				console.log(Object.keys(result[0]));
-				res.render('reservation', 
+				// console.log(Object.keys(result[0]));
+				res.render('shipment', 
 				{
 					table: result,
 				});
 			});
+		});
+		
+				// Reservation
+		app.post('/reservation', function (req, res){
+			//	console.log('got request');
+			var reqDate = req.body.reqDate;
+			var destination = req.body.destination;
+			var companyID = req.body.companyID;
+			var RocketID = req.body.RocketID;
+			if ((reqDate == undefined) || (reqDate == "")) { // || (name=="" && isNaN(astroID))
+				sql = "select * from Rocket";
+				con.query(sql, function (err, result) {
+                	if (err) { 
+                		let result = {};
+                	}
+					// console.log(Object.keys(result[0]));
+					res.render('reservation', 
+					{
+						table: result,
+						err_msg: ""
+					});
+				});
+			} else {
+
+				con.query("select count(*) from Rocket where CompanyID =" + companyID + " AND RocketID=" + RocketID, function(err, result){
+					if (err) throw err;
+					// console.log(result);
+					if (result[0]['count(*)'] == 0) {
+						var err_msg="The rocket you selected does not exist";
+						con.query("select * from Rocket", function (err, result) {
+		                	if (err) { 
+		                		let result = {};
+		                	}
+							// console.log(Object.keys(result[0]));
+							res.render('reservation', 
+							{
+								table: result,
+								err_msg: err_msg
+							});
+						});
+					} else {
+						// console.log("select count(*) from Reservation where CompanyID=" + companyID + " AND " + "RequestedDate='" + reqDate + "' AND " + "RocketID=" + RocketID);
+						con.query("select count(*) from Reservation where CompanyID=" + companyID + " AND " + "RequestedDate='" + reqDate + "' AND " + "RocketID=" + RocketID, 
+							function(err, result) {
+								if (err) throw err;
+								// console.log(result)
+								if (result[0]['count(*)'] > 0) {
+									var err_msg = "The rocket you selected is occuppied.";
+									con.query("select * from Rocket", function (err, result) {
+					                	if (err) { 
+					                		let result = {};
+					                	}
+										// console.log(Object.keys(result[0]));
+										res.render('reservation', 
+										{
+											table: result,
+											err_msg: err_msg
+										});
+									});
+								} else {
+									
+											function randomInt(low, high) {
+  												return Math.floor(Math.random() * (high - low) + low);
+											}
+
+
+
+											var ReserveID = randomInt(100000,999999);
+											sql = "INSERT INTO Reservation(ReserveID, RequestedDate, Destination, CompanyID, RocketID) VALUES(" + ReserveID + ", '"
+												+ reqDate + "','" + destination + "'," + companyID + "," + RocketID + ");";
+
+											// sql += "DROP VIEW successReserve; Create view successReserve as select * from Reservation where ReserveID=" + ReserveID;
+
+											// sql += "; select * from successReserve;";
+
+											console.log(sql);
+											con.query(sql, function (err, result) {
+								                con.query("DROP VIEW successReserve;", function(err, result) {
+								                	con.query("Create view successReserve as select * from Reservation where ReserveID=" + ReserveID, function(err, result) {
+								                		con.query("select * from successReserve", function(err, result) {
+								                			if (err) { 
+											                	let result = {};
+											                }
+											                var err_msg = "reservation success!"
+											                // console.log(result);
+															// console.log(Object.keys(result[0]));
+															res.render('reservation', 
+															{
+																table: result,
+																err_msg: err_msg
+															});
+								                		});
+
+								                	});
+
+								                });
+								                
+											});
+								}
+								
+						});
+					}
+					
+				});
+
+			}
 		});
     }
   });
@@ -307,4 +415,3 @@ app.post('/', function (req, res) {
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!')
 })
-
