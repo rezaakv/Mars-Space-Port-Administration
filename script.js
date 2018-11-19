@@ -179,10 +179,10 @@ app.post('/', function (req, res) {
 		app.post('/companyRocket', function(req, res){
 			var companyID = req.body.companyID;
 			if ((companyID == undefined) || (companyID == "")) {
-				sql = "select RocketID from Rocket, Company";
+				sql = "select c.CompanyID, r.RocketID from Rocket r, Company c where r.companyID = c.companyID";
 			} else {
-				sql = "select RocketID from Rocket, Company where ";
-				sql += "Company.companyID = Rocket.companyID AND Rocket.companyID =" + companyID;
+				sql = "select c.CompanyID, r.RocketID from Rocket r, Company c where ";
+				sql += "c.companyID = r.companyID AND r.companyID =" + companyID;
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
