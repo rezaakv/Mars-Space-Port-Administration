@@ -22,13 +22,35 @@
 			<div class="panel panel-transparent">
 				<div class="panel-heading">
 					Make Reservation
-					<form id="reservation" method="post" action="makeReservation">
-						Request Date<input type="text" name="reqDate" id="reqDate" placeholder="yyyy-mm-dd"/>
-						Destination<input type="text" name="destination" id="destination" placeholder="Destination" />
-						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" placeholder="CompanyID" />
-						<input type="text" pattern="[0-9]{0,100}" name="RocketID" id="RocketID" placeholder="RocketID" />
+					<form id="reservation" method="post" action="reservation">
+						Request Date<input type="text" name="reqDate" id="reqDate" required="required" placeholder="yyyy-mm-dd"/>
+						Destination<input type="text" name="destination" id="destination" required="required" placeholder="Destination" />
+						<input type="text" pattern="[0-9]{0,100}" name="companyID" id="companyID" required="required" placeholder="CompanyID" />
+						<input type="text" pattern="[0-9]{0,100}" name="RocketID" id="RocketID" required="required" placeholder="RocketID" />
 						<input type="submit" />
 					</form>
+					<div><%= err_msg %></div>
+				</div>
+
+				<div id="result">
+				<table class="table">
+				<tr>
+					<% if (table.length > 0) {
+						let tableHeadings = Object.keys(table[0]);
+					for(let head of tableHeadings) { %>
+						<td><%= head %></td>
+					<% } %>
+				</tr>
+
+				<% for(var i=0; i < table.length; i++) { %>
+   				<tr>
+				<% for (let cell of tableHeadings) { %>
+					<td><%= table[i][cell] %></td>
+				<% } }%>
+   				</tr>
+				<% } %>
+				</table>
+			
 				</div>
 
 			</div>
