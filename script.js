@@ -164,9 +164,28 @@ app.post('/', function (req, res) {
 			if ((companyID == undefined) || (companyID == "")) {
 				sql = "select * from Crew, Astronaut";
 			} else {
-				sql = "select * from Crew, Astronaut where ";
+				sql = "select * from Crew c, Astronaut a where ";
+				sql += "c.AstroID = a.AstroID, "
 				sql += "CompanyID = " + companyID;
 			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+                //console.log(table);
+                res.render('company', {table: result});
+			});
+		});
+
+		app.post('/companyValue', function (req, res){
+			//	console.log('got request');
+			// var companyID = req.body.companyID;
+			// if ((companyID == undefined) || (companyID == "")) {
+			// 	sql = "select * from Company";
+			// } else {
+				sql = "select cm.CompanyID, cm.Name, Sum(value) from Company cm, Cargo c where ";
+				sql += "cm.CompanyID = c.CompanyID";
+				sql += " group by CompanyID ";
+			// }
 			console.log(sql);
 			con.query(sql, function (err, result) {
                 if (err) throw err;
