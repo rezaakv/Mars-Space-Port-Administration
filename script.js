@@ -162,11 +162,46 @@ app.post('/', function (req, res) {
 			//	console.log('got request');
 			var companyID = req.body.companyID;
 			if ((companyID == undefined) || (companyID == "")) {
-				sql = "select * from Crew, Astronaut";
+				sql = "select * from Crew c, Astronaut a where c.AstroID = a.AstroID";
 			} else {
-				sql = "select * from Crew, Astronaut where ";
-				sql += "CompanyID = " + companyID;
+				sql = "select * from Crew c, Astronaut a where ";
+				sql += "c.AstroID = a.AstroID and "
+				sql += "c.CompanyID = " + companyID;
 			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+                //console.log(table);
+                res.render('company', {table: result});
+			});
+		});
+		
+		app.post('/companyRocket', function(req, res){
+			var companyID = req.body.companyID;
+			if ((companyID == undefined) || (companyID == "")) {
+				sql = "select c.CompanyID, r.RocketID from Rocket r, Company c where r.companyID = c.companyID";
+			} else {
+				sql = "select c.CompanyID, r.RocketID from Rocket r, Company c where ";
+				sql += "c.companyID = r.companyID AND r.companyID =" + companyID;
+			}
+			console.log(sql);
+			con.query(sql, function (err, result) {
+                if (err) throw err;
+                //console.log(table);
+                res.render('company', {table: result});
+			});
+		});
+
+		app.post('/companyValue', function (req, res){
+			//	console.log('got request');
+			// var companyID = req.body.companyID;
+			// if ((companyID == undefined) || (companyID == "")) {
+			// 	sql = "select * from Company";
+			// } else {
+				sql = "select cm.CompanyID, cm.Name, Sum(value) from Company cm, Cargo c where ";
+				sql += "cm.CompanyID = c.CompanyID";
+				sql += " group by CompanyID ";
+			// }
 			console.log(sql);
 			con.query(sql, function (err, result) {
                 if (err) throw err;
@@ -251,4 +286,3 @@ app.post('/', function (req, res) {
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!')
 })
-
