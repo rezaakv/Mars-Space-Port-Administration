@@ -374,9 +374,16 @@ INSERT INTO `Rocket` (`RocketID`, `Model`, `Capacity`, `CompanyID`) VALUES (4830
 #
 # TABLE STRUCTURE FOR: Reservation
 #
-
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103437, '2017-02-20', 'Vancouver', 9329, 471678);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103438, '2017-02-20', 'Sweden', 9329, 471678);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103436, '2017-02-20', 'MarsCity', 9329, 471678);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (104568, '2008-07-31', 'MarsCity', 8457, 425652);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103437, '2017-02-20', 'Vancouver', 9329, 471678);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (103438, '2017-02-20', 'Sweden', 9329, 471678);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (104568, '2008-07-31', 'Vancouver', 8457, 425652);
+INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (104568, '2008-07-31', 'Sweden', 8457, 425652);
+
+
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (105576, '1992-07-24', 'MarsCity', 7907, 368808);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (108400, '2008-01-25', 'Ghana', 3290, 164398);
 INSERT INTO `Reservation` (`ReserveID`, `RequestedDate`, `Destination`, `CompanyID`, `RocketID`) VALUES (111110, '1972-04-08', 'Algeria', 5479, 261908);

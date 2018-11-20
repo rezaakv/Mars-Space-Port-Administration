@@ -35,7 +35,9 @@ CREATE TABLE IF NOT EXISTS Reservation(
     RocketID INT NOT NULL,
     PRIMARY KEY (ReserveID),
     FOREIGN KEY (CompanyID) REFERENCES Company (CompanyID),
-    FOREIGN KEY (RocketID) REFERENCES Rocket (RocketID));
+    FOREIGN KEY (RocketID) REFERENCES Rocket (RocketID)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
 
 CREATE TABLE IF NOT EXISTS Cargo(
     CargoID INT,
