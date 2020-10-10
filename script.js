@@ -21,19 +21,21 @@ app.post('/', function (req, res) {
   	// console.log(username);
   	// console.log(password);
   	let con = mysql.createConnection({
-  		host: '138.68.57.55',
+  		host: '127.0.0.1',
   		port: 3306,
   		user: username,
   		password: password,
-		database: "MarsSpacePortAdministration"
+		database: "marsspaceportadministration"
 	});
 
   	con.connect(function(err) {
     	if (err) {
+			console.log("HEELLOOO");
 			console.log(err);
 			var err_msg = "Permission denied. Please try again.";
 			res.render('index', {err_msg: err_msg});
     	} else {
+			console.log("CONNECTED FINALLY");
 		var table = [];
 		console.log('officer rendered');
 		let sql = "select * from Astronaut";
@@ -413,6 +415,6 @@ app.post('/', function (req, res) {
   });
 })
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!')
+app.listen(18080, function () {
+  console.log('Example app listening on port 18080!')
 })
