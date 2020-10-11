@@ -414,7 +414,7 @@ app.post('/', function (req, res) {
     }
   });
 })
-
-app.listen(18080, function () {
-  console.log('Example app listening on port 18080!')
+var Port = process.env.PORT || 18080;
+app.listen(Port, function () {
+  console.log('Example app listening on port ', Port)
 })
