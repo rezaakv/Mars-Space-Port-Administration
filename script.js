@@ -40,7 +40,10 @@ app.post('/', function (req, res) {
 		console.log('officer rendered');
 		let sql = "select * from Astronaut";
     	con.query(sql, function (err, result) {
-        	if (err) throw err;
+			// if (err) throw err;
+			if (err) { 
+				let result = {};
+			}
 			//console.log(table);
 			res.render('officer', {table: result});
 		});
@@ -82,7 +85,10 @@ app.post('/', function (req, res) {
                 }
                 //console.log(table);
 				con.query("select * from Astronaut", function(err, result){
-					if (err) throw err;
+					// if (err) throw err;
+					if (err) { 
+						let result = {};
+					}
 					res.render('officer', {table: result});
 				})
 			});
@@ -106,7 +112,10 @@ app.post('/', function (req, res) {
                 }
                 //console.log(table);
 				con.query("select * from Astronaut", function(err, result){
-					if (err) throw err;
+					// if (err) throw err;
+					if (err) { 
+						let result = {};
+					}
 					res.render('officer', {table: result});
 				})
 			});
@@ -130,7 +139,10 @@ app.post('/', function (req, res) {
                 }
                 //console.log(table);
 				con.query("select * from Astronaut", function(err, result){
-					if (err) throw err;
+					// if (err) throw err;
+					if (err) { 
+						let result = {};
+					}
 					res.render('officer', {table: result});
 				})
 			});
@@ -172,7 +184,10 @@ app.post('/', function (req, res) {
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+				// if (err) throw err;
+				if (err) { 
+                	let result = {};
+                }
                 //console.log(table);
                 res.render('company', {table: result});
 			});
@@ -188,7 +203,10 @@ app.post('/', function (req, res) {
 			}
 			console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+				// if (err) throw err;
+				if (err) { 
+                	let result = {};
+                }
                 //console.log(table);
                 res.render('company', {table: result});
 			});
@@ -206,7 +224,10 @@ app.post('/', function (req, res) {
 			// }
 			console.log(sql);
 			con.query(sql, function (err, result) {
-                if (err) throw err;
+				// if (err) throw err;
+				if (err) { 
+                	let result = {};
+                }
                 //console.log(table);
                 res.render('company', {table: result});
 			});
@@ -329,7 +350,10 @@ app.post('/', function (req, res) {
 			} else {
 
 				con.query("select count(*) from Rocket where CompanyID =" + companyID + " AND RocketID=" + RocketID, function(err, result){
-					if (err) throw err;
+					// if (err) throw err;
+					if (err) { 
+						let result = {};
+					}
 					// console.log(result);
 					if (result[0]['count(*)'] == 0) {
 						var err_msg="The rocket you selected does not exist";
@@ -348,7 +372,10 @@ app.post('/', function (req, res) {
 						// console.log("select count(*) from Reservation where CompanyID=" + companyID + " AND " + "RequestedDate='" + reqDate + "' AND " + "RocketID=" + RocketID);
 						con.query("select count(*) from Reservation where CompanyID=" + companyID + " AND " + "RequestedDate='" + reqDate + "' AND " + "RocketID=" + RocketID, 
 							function(err, result) {
-								if (err) throw err;
+								// if (err) throw err;
+								if (err) { 
+									let result = {};
+								}
 								// console.log(result)
 								if (result[0]['count(*)'] > 0) {
 									var err_msg = "The rocket you selected is occuppied.";
