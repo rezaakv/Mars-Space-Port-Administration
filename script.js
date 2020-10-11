@@ -21,11 +21,11 @@ app.post('/', function (req, res) {
   	// console.log(username);
   	// console.log(password);
   	let con = mysql.createConnection({
-  		host: '127.0.0.1',
+  		host: 'us-cdbr-east-02.cleardb.com',
   		port: 3306,
   		user: username,
   		password: password,
-		database: "marsspaceportadministration"
+		database: "heroku_431255032ab7e40"
 	});
 
   	con.connect(function(err) {
