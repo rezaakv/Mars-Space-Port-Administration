@@ -27,7 +27,9 @@ app.post('/', function (req, res) {
   		password: password,
 		database: "heroku_431255032ab7e40"
 	});
-
+	con.on('error', function(err) {
+		console.log(err.code); 
+	  });
   	con.connect(function(err) {
     	if (err) {
 			console.log("HEELLOOO");
